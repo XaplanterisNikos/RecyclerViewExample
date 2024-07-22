@@ -27,7 +27,7 @@ This Android project demonstrates the use of `RecyclerView` with two activities,
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/JamesBondMoviesRecyclerView.git
+    git clone https://github.com/XaplanterisNikos/RecyclerViewExample
     ```
 2. Open the project in Android Studio.
 3. Build and run the project on an emulator or physical device.
@@ -35,11 +35,11 @@ This Android project demonstrates the use of `RecyclerView` with two activities,
 ## Project Structure
 
 ```plaintext
-JamesBondMoviesRecyclerView/
+RecyclerViewExample/
 ├── app/
 │   ├── src/
 │   │   ├── main/
-│   │   │   ├── java/com/example/jamesbondmovies/
+│   │   │   ├── java/com/example/recyclerviewexample/
 │   │   │   │   ├── adapter/
 │   │   │   │   │   └── MovieAdapter.java
 │   │   │   │   ├── model/
