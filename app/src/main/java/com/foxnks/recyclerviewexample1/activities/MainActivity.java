@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     private String TAG = "Check Array";
     private int[] years;
     private boolean isSortedAscending = true;
+    private String[] cast;
 
 
     @Override
@@ -81,6 +82,9 @@ public class MainActivity extends AppCompatActivity {
         // set adapter
         recyclerView.setAdapter(myAdapter);
 
+        // getCast
+        getCast();
+
 //        // get array of years
 //        years = getYears(movieList);
 //        Log.i(TAG,"Array "+ years[0]);
@@ -115,7 +119,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-        // method to return array of release years
+
+
+    // get cast array
+    private void getCast() {
+        cast = new String[movieList.size()];
+        for(int i =0;i< cast.length; i++){
+            cast[i]= movieList.get(i).getCast();
+        }
+    }
+    // method to return array of release years
 //    private int[] getYears(ArrayList<Movie> movieList) {
 //        int[] yearMovie = new int[movieList.size()];
 //        for(int i = 0; i < movieList.size(); i ++){

@@ -7,8 +7,10 @@ This Android project demonstrates the use of `RecyclerView` with two activities,
 - **RecyclerView** to display a list of James Bond movies.
 - **Two Activities**:
   - **MainActivity**: Displays the list of movies with a search bar.
+  - clickable Image for the cast and clickable Title for the details
   - **DetailActivity**: Shows detailed information about a selected movie.
 - **Search Functionality**: Filter movies by their title.
+- Ascending - Descending Button
 - **Swipe-to-Delete**: Remove movies from the list with a swipe gesture.
 
 ## Screenshots

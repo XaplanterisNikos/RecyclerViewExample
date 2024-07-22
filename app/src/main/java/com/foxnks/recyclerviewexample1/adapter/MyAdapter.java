@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.foxnks.recyclerviewexample1.R;
@@ -48,6 +49,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
         holder.title.setText(movie.getTitle());
         // set image
         holder.image.setImageResource(movie.getImage());
+
+        holder.cast.setText(movie.getCast());
+        boolean isVisible = movie.isVisibility();
+        holder.constraintLayout.setVisibility(isVisible ? View.VISIBLE: View.GONE);
 
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -114,12 +119,27 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
         // views
         public TextView title;
         public ImageView image;
+        TextView cast;
+        ConstraintLayout constraintLayout;
 
         // constructor
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.tvMovieTitle);
             image = itemView.findViewById(R.id.ivMovieView);
+            cast = itemView.findViewById(R.id.cast);
+            constraintLayout = itemView.findViewById(R.id.expanded_layout);
+
+            image.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Movie movie = moviesList.get(getAdapterPosition());
+                    movie.setVisibility(!movie.isVisibility());
+                    notifyDataSetChanged();
+                }
+            });
         }
+
+
     }
 }
