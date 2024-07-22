@@ -19,7 +19,7 @@ This Android project demonstrates the use of `RecyclerView` with two activities,
 
   <div style="text-align: center;">
     <img src="app/src/main/res/screenshots/main_Screenshot.png" alt="Main Activity" width="180"/>
-    <div style="text-size:12sp">Main Activity</div>
+    <div style="font-size:12px">Main Activity</div>
   </div>
 
   <div style="text-align: center;">
