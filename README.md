@@ -24,7 +24,7 @@ This Android project demonstrates the use of `RecyclerView` with two activities,
 
   <div style="display: inline-block; text-align: center;">
     <img src="app/src/main/res/screenshots/main_b_Screenshot.png" alt="Main Activity (cast selection)" width="200"/>
-    <figcaption>Main Activity (Alternative)</figcaption>
+    <figcaption>Main Activity (cast selection)</figcaption>
   </div>
 
   <div style="display: inline-block; text-align: center;">
