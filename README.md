@@ -18,17 +18,17 @@ This Android project demonstrates the use of `RecyclerView` with two activities,
 <div style="display: flex; gap: 20px;">
 
   <div style="text-align: center;">
-    <img src="app/src/main/res/screenshots/main_Screenshot.png" alt="Main Activity" width="200"/>
+    <img src="app/src/main/res/screenshots/main_Screenshot.png" alt="Main Activity" width="180"/>
     <div>Main Activity</div>
   </div>
 
   <div style="text-align: center;">
-    <img src="app/src/main/res/screenshots/main_b_Screenshot.png" alt="Main Activity (Alternative)" width="200"/>
+    <img src="app/src/main/res/screenshots/main_b_Screenshot.png" alt="Main Activity (Alternative)" width="180"/>
     <div>Main Activity (cast selection)</div>
   </div>
 
   <div style="text-align: center;">
-    <img src="app/src/main/res/screenshots/details_Screenshot.png" alt="Detail Activity" width="200"/>
+    <img src="app/src/main/res/screenshots/details_Screenshot.png" alt="Detail Activity" width="180"/>
     <div>Detail Activity</div>
   </div>
 
