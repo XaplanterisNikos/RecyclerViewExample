@@ -15,8 +15,9 @@ This Android project demonstrates the use of `RecyclerView` with two activities,
 
 ## Screenshots
 
-![Main Activity](screenshots/main_activity.png)
-![Detail Activity](screenshots/detail_activity.png)
+![Main Activity](screenshots/main_Screenshot.png)
+![Main Activity](screenshots/main_b_Screenshot.png)
+![Detail Activity](screenshots/details_Screenshot.png)
 
 ## Getting Started
 
@@ -43,21 +44,21 @@ RecyclerViewExample/
 │   │   ├── main/
 │   │   │   ├── java/com/example/recyclerviewexample/
 │   │   │   │   ├── adapter/
-│   │   │   │   │   └── MovieAdapter.java
+│   │   │   │   │   └── MyAdapter.java
 │   │   │   │   ├── model/
 │   │   │   │   │   └── Movie.java
-│   │   │   │   ├── ui/
+│   │   │   │   ├── activities/
 │   │   │   │   │   ├── MainActivity.java
 │   │   │   │   │   ├── DetailActivity.java
-│   │   │   │   └── utils/
-│   │   │   │       └── SwipeToDeleteCallback.java
+│   │   │   │   └── data/
+│   │   │   │       └── MovieData.java
 │   │   │   ├── res/
 │   │   │   │   ├── layout/
 │   │   │   │   │   ├── activity_main.xml
 │   │   │   │   │   ├── activity_detail.xml
-│   │   │   │   │   ├── item_movie.xml
+│   │   │   │   │   ├── movie_row.xml
 │   │   │   │   ├── drawable/
-│   │   │   │   │   └── ic_delete.xml
+│   │   │   │   │   └── png files
 │   │   │   │   ├── values/
 │   │   │   │       └── strings.xml
 │   └── build.gradle
