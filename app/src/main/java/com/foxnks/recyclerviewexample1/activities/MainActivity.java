@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.SearchView;
 import android.widget.TextView;
 
@@ -22,6 +24,8 @@ import com.foxnks.recyclerviewexample1.data.MovieData;
 import com.foxnks.recyclerviewexample1.model.Movie;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,10 +34,11 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Movie> movieList;
     private MyAdapter myAdapter;
     private TextView titletv;
+    private Button btn_sort;
     private MovieData movieData = new MovieData();
     private String TAG = "Check Array";
-
-
+    private int[] years;
+    private boolean isSortedAscending = true;
 
 
     @Override
@@ -57,9 +62,10 @@ public class MainActivity extends AppCompatActivity {
         // initialize the widget
         recyclerView = findViewById(R.id.recyclerview);
         titletv = findViewById(R.id.tvtitle);
+        btn_sort = findViewById(R.id.btn_short);
 
         // set title
-        titletv.setText("JamesBond Movies");
+        titletv.setText("007 Movies");
 
         // create an adapter
         myAdapter = new MyAdapter(movieList);
@@ -75,8 +81,50 @@ public class MainActivity extends AppCompatActivity {
         // set adapter
         recyclerView.setAdapter(myAdapter);
 
+//        // get array of years
+//        years = getYears(movieList);
+//        Log.i(TAG,"Array "+ years[0]);
 
+// button sort movies
+        btn_sort.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isSortedAscending) {
+                    btn_sort.setText("Ascending");
+                    Collections.sort(movieList, new Comparator<Movie>() {
+                        @Override
+                        public int compare(Movie o1, Movie o2) {
+                            return Integer.compare(o1.getYear(), o2.getYear());
+                        }
+                    });
+                } else {
+                    btn_sort.setText("Descending");
+                    Collections.sort(movieList, new Comparator<Movie>() {
+                        @Override
+                        public int compare(Movie o1, Movie o2) {
+                            return Integer.compare(o2.getYear(), o1.getYear());
+                        }
+                    });
+
+                }
+                isSortedAscending = !isSortedAscending;
+
+                myAdapter = new MyAdapter(movieList);
+                recyclerView.setAdapter(myAdapter);
+                myAdapter.notifyDataSetChanged();
+            }
+        });
     }
+        // method to return array of release years
+//    private int[] getYears(ArrayList<Movie> movieList) {
+//        int[] yearMovie = new int[movieList.size()];
+//        for(int i = 0; i < movieList.size(); i ++){
+//            yearMovie[i] = movieList.get(i).getYear();
+//        }
+//        return yearMovie;
+//    }
+
+// Search Menu
     public boolean onCreateOptionsMenu(Menu menu) {
 
         getMenuInflater().inflate(R.menu.menu_item, menu);
@@ -84,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
         MenuItem menuItem = menu.findItem(R.id.search_item);
         SearchView searchView = (SearchView) menuItem.getActionView();
         searchView.setMaxWidth(Integer.MAX_VALUE);
-        searchView.setQueryHint("Search here...");
+        searchView.setQueryHint("Search JB movie...");
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
