@@ -15,7 +15,7 @@ This Android project demonstrates the use of `RecyclerView` with two activities,
 
 ## Screenshots
 
-![Main Activity](src/main/res/screenshots/main_Screenshot.png)
+![Main Activity](app/src/main/res/screenshots/main_Screenshot.png)
 ![Main Activity](src/main/res/screenshots/main_b_Screenshot.png)
 ![Detail Activity](src/main/res/screenshots/details_Screenshot.png)
 
