@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,14 +19,16 @@ import com.foxnks.recyclerviewexample1.model.Movie;
 
 import java.util.ArrayList;
 
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
+public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> implements Filterable {
 
     // variables
     private ArrayList<Movie> moviesList;
+    private ArrayList<Movie> moviesListFull;
 
     // constructor
     public MyAdapter(ArrayList<Movie> moviesList) {
-        this.moviesList = moviesList;
+        this.moviesListFull = moviesList;
+        this.moviesList = new ArrayList<>(moviesListFull);
     }
 
     @NonNull
@@ -68,6 +72,41 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     public int getItemCount() {
         return moviesList.size();
     }
+
+    @Override
+    public Filter getFilter() {
+        return movieFilter;
+    }
+
+    public final Filter movieFilter = new Filter() {
+        @Override
+        protected FilterResults performFiltering(CharSequence constraint) {
+            ArrayList<Movie> filteredMovieList = new ArrayList<>();
+            if(constraint == null || constraint.length()== 0){
+                filteredMovieList.addAll(moviesListFull);
+            }else{
+                String filterPattern = constraint.toString().toLowerCase().trim();
+
+                for(Movie movie : moviesListFull){
+                    if(movie.getTitle().toLowerCase().contains((filterPattern))){
+                        filteredMovieList.add(movie);
+                    }
+                }
+            }
+            FilterResults results = new FilterResults();
+            results.values = filteredMovieList;
+            results.count = filteredMovieList.size();
+
+            return results;
+        }
+
+        @Override
+        protected void publishResults(CharSequence constraint, FilterResults results) {
+            moviesList.clear();
+            moviesList.addAll((ArrayList) results.values);
+            notifyDataSetChanged();
+        }
+    };
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
