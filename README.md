@@ -15,9 +15,18 @@ This Android project demonstrates the use of `RecyclerView` with two activities,
 
 ## Screenshots
 
-![Main Activity] <img src="app/src/main/res/screenshots/main_Screenshot.png" alt="Main Activity" width="200"/>
-![Main Activity] <img src="app/src/main/res/screenshots/main_b_Screenshot.png" alt="Main Activity" width="200"/>
-![Detail Activity] <img src="app/src/main/res/screenshots/details_Screenshot.png" alt="Detail Activity" width="200"/>
+<figure>
+    <img src="app/src/main/res/screenshots/main_Screenshot.png" alt="Main Activity" width="200"/>
+    <figcaption>Main Activity</figcaption>
+</figure>
+<figure>
+    <img src="app/src/main/res/screenshots/main_b_Screenshot.png" alt="Main Activity" width="200"/>
+    <figcaption>Main Activity (Cast selection)</figcaption>
+</figure>
+<figure>
+    <img src="app/src/main/res/screenshots/details_Screenshot.png" alt="Detail Activity" width="200"/>
+    <figcaption>Detail Activity</figcaption>
+</figure>
 
 ## Getting Started
 
