@@ -7,16 +7,20 @@ public class Movie {
     private String description;
     private String worldPremiere;
     private int year;
+    private boolean visibility;
+    private String cast;
 
     public Movie() {
     }
 
-    public Movie(String title, int image, String description, String worldPremiere , int year) {
+    public Movie(String title, int image, String description, String worldPremiere , int year,String cast) {
         this.title = title;
         this.image = image;
         this.description = description;
         this.worldPremiere = worldPremiere;
         this.year = year;
+        this.cast = cast;
+        this.visibility = false;
     }
 
     public String getTitle() {

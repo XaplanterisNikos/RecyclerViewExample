@@ -2,6 +2,7 @@ package com.foxnks.recyclerviewexample1.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -46,6 +47,13 @@ public class DetailActivity extends AppCompatActivity {
         btnBack.setOnClickListener(v -> {
             Intent bckIntent = new Intent(this, MainActivity.class);;
             startActivity(bckIntent);
+        });
+
+        tvDetailMovie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
         });
 
     }
