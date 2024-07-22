@@ -6,15 +6,17 @@ public class Movie {
     private int image;
     private String description;
     private String worldPremiere;
+    private int year;
 
     public Movie() {
     }
 
-    public Movie(String title, int image, String description, String worldPremiere) {
+    public Movie(String title, int image, String description, String worldPremiere , int year) {
         this.title = title;
         this.image = image;
         this.description = description;
         this.worldPremiere = worldPremiere;
+        this.year = year;
     }
 
     public String getTitle() {
@@ -47,5 +49,13 @@ public class Movie {
 
     public void setWorldPremiere(String worldPremiere) {
         this.worldPremiere = worldPremiere;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
     }
 }

@@ -73,6 +73,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
         return moviesList.size();
     }
 
+
     @Override
     public Filter getFilter() {
         return movieFilter;
