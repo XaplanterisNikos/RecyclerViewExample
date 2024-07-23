@@ -1,9 +1,12 @@
 package com.foxnks.recyclerviewexample1.model;
 
+import java.util.List;
+
 public class Movie {
 
     private String title;
     private int image;
+    private List<Integer> pictures;
     private String description;
     private String worldPremiere;
     private int year;
@@ -21,6 +24,11 @@ public class Movie {
         this.year = year;
         this.cast = cast;
         this.visibility = false;
+    }
+
+    public Movie(String title, List<Integer> pictures) {
+        this.title = title;
+        this.pictures = pictures;
     }
 
     public String getTitle() {
@@ -77,5 +85,13 @@ public class Movie {
 
     public void setVisibility(boolean visibility) {
         this.visibility = visibility;
+    }
+
+    public List<Integer> getPictures() {
+        return pictures;
+    }
+
+    public void setPictures(List<Integer> pictures) {
+        this.pictures = pictures;
     }
 }

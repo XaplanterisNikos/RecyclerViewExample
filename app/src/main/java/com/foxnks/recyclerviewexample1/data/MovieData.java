@@ -4,6 +4,8 @@ import com.foxnks.recyclerviewexample1.R;
 import com.foxnks.recyclerviewexample1.model.Movie;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class MovieData {
 
@@ -451,6 +453,35 @@ public class MovieData {
         movieList.add(movie25);
 
 return movieList;
+    }
+
+    public ArrayList<Movie> insertPicture() {
+        ArrayList<Movie> picturesList = new ArrayList<>();
+
+         List<Integer> ntd= Arrays.asList(
+                R.drawable.ntd_pic01
+                ,R.drawable.ntd_pic02
+                ,R.drawable.ntd_pic03
+                ,R.drawable.ntd_pic04
+                ,R.drawable.ntd_pic05
+                ,R.drawable.ntd_pic06
+                ,R.drawable.ntd_pic07
+                ,R.drawable.ntd_pic08
+                ,R.drawable.ntd_pic09
+                ,R.drawable.ntd_pic10
+                ,R.drawable.ntd_pic11
+                ,R.drawable.ntd_pic12
+                ,R.drawable.ntd_pic13
+                ,R.drawable.ntd_pic14
+                ,R.drawable.ntd_pic15
+                ,R.drawable.ntd_pic16
+         );
+        Movie movie25 = new Movie("No Time to Die",ntd);
+        picturesList.add(movie25);
+
+
+
+        return picturesList;
     }
 
 
