@@ -11,6 +11,7 @@ This Android project demonstrates the use of `RecyclerView` with two activities,
   - **DetailActivity**: Shows detailed information about a selected movie.
 - **Search Functionality**: Filter movies by their title.
 - Ascending - Descending Button
+- **RecyclerView Horizontal** to display images of the movie
 - **Swipe-to-Delete**: Remove movies from the list with a swipe gesture.
 
 ## Screenshots
@@ -61,6 +62,7 @@ RecyclerViewExample/
 │   │   │   ├── java/com/example/recyclerviewexample/
 │   │   │   │   ├── adapter/
 │   │   │   │   │   └── MyAdapter.java
+│   │   │   │   │   └── PictureAdapter.java
 │   │   │   │   ├── model/
 │   │   │   │   │   └── Movie.java
 │   │   │   │   ├── activities/
@@ -73,6 +75,7 @@ RecyclerViewExample/
 │   │   │   │   │   ├── activity_main.xml
 │   │   │   │   │   ├── activity_detail.xml
 │   │   │   │   │   ├── movie_row.xml
+│   │   │   │   │   ├── item_picture.xml
 │   │   │   │   ├── drawable/
 │   │   │   │   │   └── png files
 │   │   │   │   ├── values/

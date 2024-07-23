@@ -479,7 +479,70 @@ return movieList;
         Movie movie25 = new Movie("No Time to Die",ntd);
         picturesList.add(movie25);
 
+        List<Integer> spectre= Arrays.asList(
+                R.drawable.spectre_pic01
+                ,R.drawable.spectre_pic02
+                ,R.drawable.spectre_pic03
+                ,R.drawable.spectre_pic04
+                ,R.drawable.spectre_pic05
+                ,R.drawable.spectre_pic06
+                ,R.drawable.spectre_pic07
+                ,R.drawable.spectre_pic08
+                ,R.drawable.spectre_pic09
 
+        );
+
+        Movie movie24 = new Movie("Spectre",spectre);
+        picturesList.add(movie24);
+
+        List<Integer> skyfall= Arrays.asList(
+                R.drawable.skyfall_pic01
+                ,R.drawable.skyfall_pic02
+                ,R.drawable.skyfall_pic03
+                ,R.drawable.skyfall_pic04
+                ,R.drawable.skyfall_pic05
+                ,R.drawable.skyfall_pic06
+                ,R.drawable.skyfall_pic07
+                ,R.drawable.skyfall_pic08
+                ,R.drawable.skyfall_pic09
+
+        );
+
+        Movie movie23 = new Movie("Skyfall",skyfall);
+        picturesList.add(movie23);
+
+        List<Integer> solace= Arrays.asList(
+                R.drawable.solace_pic01
+                ,R.drawable.solace_pic02
+                ,R.drawable.solace_pic03
+                ,R.drawable.solace_pic04
+                ,R.drawable.solace_pic05
+                ,R.drawable.solace_pic06
+                ,R.drawable.solace_pic07
+                ,R.drawable.solace_pic08
+                ,R.drawable.solace_pic09
+
+        );
+
+        Movie movie22 = new Movie("Quantum of Solace",solace);
+        picturesList.add(movie22);
+
+
+        List<Integer> casino= Arrays.asList(
+                R.drawable.casino_pic01
+                ,R.drawable.casino_pic02
+                ,R.drawable.casino_pic03
+                ,R.drawable.casino_pic04
+                ,R.drawable.casino_pic05
+                ,R.drawable.casino_pic06
+                ,R.drawable.casino_pic07
+                ,R.drawable.casino_pic08
+                ,R.drawable.casino_pic09
+
+        );
+
+        Movie movie21 = new Movie("Casino Royale",casino);
+        picturesList.add(movie21);
 
         return picturesList;
     }
