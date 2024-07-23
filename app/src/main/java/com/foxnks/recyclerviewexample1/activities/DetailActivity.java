@@ -11,14 +11,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.foxnks.recyclerviewexample1.R;
+import com.foxnks.recyclerviewexample1.adapter.PictureAdapter;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class DetailActivity extends AppCompatActivity {
 
     private TextView tvDetailMovie,tvTitleMovie,tvReleaseMovie;
     private Button btnBack;
     private String title,release,description;
+    private RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +46,20 @@ public class DetailActivity extends AppCompatActivity {
         title = intent.getStringExtra("title");
         release = intent.getStringExtra("premiere");
         description = intent.getStringExtra("description");
+
+        // Initialize recyclerView
+        recyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
+
+        List<Integer> picuresUrls = Arrays.asList(
+                R.drawable.ntd_pic01,
+                R.drawable.ntd_pic02,
+                R.drawable.ntd_pic03,
+                R.drawable.ntd_pic04
+        );
+
+        // initialize AdapterPictures
+        PictureAdapter adapter = new PictureAdapter(this, picuresUrls);
+        recyclerView.setAdapter(adapter);
 
         // Initialize variables
         initializeVariables(title,release,description);
@@ -64,6 +85,7 @@ public class DetailActivity extends AppCompatActivity {
         tvReleaseMovie.setText(release);
         tvDetailMovie.setText(description);
 
+
     }
     // Initialize widgets
     private void initializeWidget() {
@@ -71,5 +93,6 @@ public class DetailActivity extends AppCompatActivity {
         tvTitleMovie = findViewById(R.id.tv_title_detail);
         tvReleaseMovie = findViewById(R.id.day_release_detail);
         btnBack = findViewById(R.id.backButton);
+        recyclerView = findViewById(R.id.recyclerViewPictures);
     }
 }
