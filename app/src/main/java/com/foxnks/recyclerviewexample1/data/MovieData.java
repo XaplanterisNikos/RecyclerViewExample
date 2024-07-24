@@ -458,6 +458,7 @@ return movieList;
     public ArrayList<Movie> insertPicture() {
         ArrayList<Movie> picturesList = new ArrayList<>();
 
+        // No Time To Die
          List<Integer> ntd= Arrays.asList(
                 R.drawable.ntd_pic01
                 ,R.drawable.ntd_pic02
@@ -479,6 +480,7 @@ return movieList;
         Movie movie25 = new Movie("No Time to Die",ntd);
         picturesList.add(movie25);
 
+        // Spectre
         List<Integer> spectre= Arrays.asList(
                 R.drawable.spectre_pic01
                 ,R.drawable.spectre_pic02
@@ -495,6 +497,7 @@ return movieList;
         Movie movie24 = new Movie("Spectre",spectre);
         picturesList.add(movie24);
 
+        // Skyfall
         List<Integer> skyfall= Arrays.asList(
                 R.drawable.skyfall_pic01
                 ,R.drawable.skyfall_pic02
@@ -511,6 +514,7 @@ return movieList;
         Movie movie23 = new Movie("Skyfall",skyfall);
         picturesList.add(movie23);
 
+        // Quantum of Solace
         List<Integer> solace= Arrays.asList(
                 R.drawable.solace_pic01
                 ,R.drawable.solace_pic02
@@ -528,6 +532,7 @@ return movieList;
         picturesList.add(movie22);
 
 
+        // Casino Royale
         List<Integer> casino= Arrays.asList(
                 R.drawable.casino_pic01
                 ,R.drawable.casino_pic02
@@ -544,8 +549,91 @@ return movieList;
         Movie movie21 = new Movie("Casino Royale",casino);
         picturesList.add(movie21);
 
+
+        // Die Another Day
+        List<Integer> dad= Arrays.asList(
+                R.drawable.dad_pic01
+                ,R.drawable.dad_pic02
+                ,R.drawable.dad_pic03
+                ,R.drawable.dad_pic04
+                ,R.drawable.dad_pic05
+                ,R.drawable.dad_pic06
+                ,R.drawable.dad_pic07
+                ,R.drawable.dad_pic08
+
+        );
+
+        Movie movie20 = new Movie("Die Another Day",dad);
+        picturesList.add(movie20);
+
+        // The World Is Not Enough
+        List<Integer> wne= Arrays.asList(
+                R.drawable.wne_pic01
+                ,R.drawable.wne_pic02
+                ,R.drawable.wne_pic03
+                ,R.drawable.wne_pic04
+                ,R.drawable.wne_pic05
+                ,R.drawable.wne_pic06
+                ,R.drawable.wne_pic07
+                ,R.drawable.wne_pic08
+                ,R.drawable.wne_pic09
+
+        );
+
+        Movie movie19 = new Movie("The World Is Not Enough",wne);
+        picturesList.add(movie19);
+
+        // Tomorrow Never Dies
+        List<Integer> tnd= Arrays.asList(
+                R.drawable.tnd_pic01
+                ,R.drawable.tnd_pic02
+                ,R.drawable.tnd_pic03
+                ,R.drawable.tnd_pic04
+                ,R.drawable.tnd_pic05
+                ,R.drawable.tnd_pic06
+                ,R.drawable.tnd_pic07
+                ,R.drawable.tnd_pic08
+                ,R.drawable.tnd_pic09
+
+        );
+
+        Movie movie18 = new Movie("Tomorrow Never Dies",tnd);
+        picturesList.add(movie18);
+
+        // Goldeneye
+        List<Integer> goldeneye= Arrays.asList(
+                R.drawable.goldeneye_pic01
+                ,R.drawable.goldeneye_pic02
+                ,R.drawable.goldeneye_pic03
+                ,R.drawable.goldeneye_pic04
+                ,R.drawable.goldeneye_pic05
+                ,R.drawable.goldeneye_pic06
+                ,R.drawable.goldeneye_pic07
+                ,R.drawable.goldeneye_pic08
+                ,R.drawable.goldeneye_pic09
+
+        );
+
+        Movie movie17 = new Movie("GoldenEye",goldeneye);
+        picturesList.add(movie17);
+
+        // Licence To Kill
+        List<Integer> ltk = Arrays.asList(
+                R.drawable.ltk_pic01
+                ,R.drawable.ltk_pic02
+                ,R.drawable.ltk_pic03
+                ,R.drawable.ltk_pic04
+                ,R.drawable.ltk_pic05
+                ,R.drawable.ltk_pic06
+                ,R.drawable.ltk_pic07
+                ,R.drawable.ltk_pic08
+                ,R.drawable.ltk_pic09
+
+        );
+
+        Movie movie16 = new Movie("Licence to Kill",ltk);
+        picturesList.add(movie16);
+
         return picturesList;
     }
-
-
 }

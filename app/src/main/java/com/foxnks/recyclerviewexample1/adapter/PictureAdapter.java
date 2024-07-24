@@ -1,6 +1,7 @@
 package com.foxnks.recyclerviewexample1.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.foxnks.recyclerviewexample1.R;
+import com.foxnks.recyclerviewexample1.activities.FullscreenPhotoActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -35,6 +37,12 @@ public class PictureAdapter extends RecyclerView.Adapter<PictureAdapter.ViewHold
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         int url = picturesUrls.get(position);
         Picasso.get().load(url).into(holder.imageViewPicture);
+
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, FullscreenPhotoActivity.class);
+            intent.putExtra("image_res_id", url);
+            context.startActivity(intent);
+        });
     }
 
     @Override
