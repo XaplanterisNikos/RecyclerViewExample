@@ -4,6 +4,8 @@ import com.foxnks.recyclerviewexample1.R;
 import com.foxnks.recyclerviewexample1.model.Movie;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class MovieData {
 
@@ -453,5 +455,440 @@ public class MovieData {
 return movieList;
     }
 
+    public ArrayList<Movie> insertPicture() {
+        ArrayList<Movie> picturesList = new ArrayList<>();
 
+        // No Time To Die
+         List<Integer> ntd= Arrays.asList(
+                R.drawable.ntd_pic01
+                ,R.drawable.ntd_pic02
+                ,R.drawable.ntd_pic03
+                ,R.drawable.ntd_pic04
+                ,R.drawable.ntd_pic05
+                ,R.drawable.ntd_pic06
+                ,R.drawable.ntd_pic07
+                ,R.drawable.ntd_pic08
+                ,R.drawable.ntd_pic09
+                ,R.drawable.ntd_pic10
+                ,R.drawable.ntd_pic11
+                ,R.drawable.ntd_pic12
+                ,R.drawable.ntd_pic13
+                ,R.drawable.ntd_pic14
+                ,R.drawable.ntd_pic15
+                ,R.drawable.ntd_pic16
+         );
+        Movie movie25 = new Movie("No Time to Die",ntd);
+        picturesList.add(movie25);
+
+        // Spectre
+        List<Integer> spectre= Arrays.asList(
+                R.drawable.spectre_pic01
+                ,R.drawable.spectre_pic02
+                ,R.drawable.spectre_pic03
+                ,R.drawable.spectre_pic04
+                ,R.drawable.spectre_pic05
+                ,R.drawable.spectre_pic06
+                ,R.drawable.spectre_pic07
+                ,R.drawable.spectre_pic08
+                ,R.drawable.spectre_pic09
+
+        );
+
+        Movie movie24 = new Movie("Spectre",spectre);
+        picturesList.add(movie24);
+
+        // Skyfall
+        List<Integer> skyfall= Arrays.asList(
+                R.drawable.skyfall_pic01
+                ,R.drawable.skyfall_pic02
+                ,R.drawable.skyfall_pic03
+                ,R.drawable.skyfall_pic04
+                ,R.drawable.skyfall_pic05
+                ,R.drawable.skyfall_pic06
+                ,R.drawable.skyfall_pic07
+                ,R.drawable.skyfall_pic08
+                ,R.drawable.skyfall_pic09
+
+        );
+
+        Movie movie23 = new Movie("Skyfall",skyfall);
+        picturesList.add(movie23);
+
+        // Quantum of Solace
+        List<Integer> solace= Arrays.asList(
+                R.drawable.solace_pic01
+                ,R.drawable.solace_pic02
+                ,R.drawable.solace_pic03
+                ,R.drawable.solace_pic04
+                ,R.drawable.solace_pic05
+                ,R.drawable.solace_pic06
+                ,R.drawable.solace_pic07
+                ,R.drawable.solace_pic08
+                ,R.drawable.solace_pic09
+
+        );
+
+        Movie movie22 = new Movie("Quantum of Solace",solace);
+        picturesList.add(movie22);
+
+
+        // Casino Royale
+        List<Integer> casino= Arrays.asList(
+                R.drawable.casino_pic01
+                ,R.drawable.casino_pic02
+                ,R.drawable.casino_pic03
+                ,R.drawable.casino_pic04
+                ,R.drawable.casino_pic05
+                ,R.drawable.casino_pic06
+                ,R.drawable.casino_pic07
+                ,R.drawable.casino_pic08
+                ,R.drawable.casino_pic09
+
+        );
+
+        Movie movie21 = new Movie("Casino Royale",casino);
+        picturesList.add(movie21);
+
+
+        // Die Another Day
+        List<Integer> dad= Arrays.asList(
+                R.drawable.dad_pic01
+                ,R.drawable.dad_pic02
+                ,R.drawable.dad_pic03
+                ,R.drawable.dad_pic04
+                ,R.drawable.dad_pic05
+                ,R.drawable.dad_pic06
+                ,R.drawable.dad_pic07
+                ,R.drawable.dad_pic08
+
+        );
+
+        Movie movie20 = new Movie("Die Another Day",dad);
+        picturesList.add(movie20);
+
+        // The World Is Not Enough
+        List<Integer> wne= Arrays.asList(
+                R.drawable.wne_pic01
+                ,R.drawable.wne_pic02
+                ,R.drawable.wne_pic03
+                ,R.drawable.wne_pic04
+                ,R.drawable.wne_pic05
+                ,R.drawable.wne_pic06
+                ,R.drawable.wne_pic07
+                ,R.drawable.wne_pic08
+                ,R.drawable.wne_pic09
+
+        );
+
+        Movie movie19 = new Movie("The World Is Not Enough",wne);
+        picturesList.add(movie19);
+
+        // Tomorrow Never Dies
+        List<Integer> tnd= Arrays.asList(
+                R.drawable.tnd_pic01
+                ,R.drawable.tnd_pic02
+                ,R.drawable.tnd_pic03
+                ,R.drawable.tnd_pic04
+                ,R.drawable.tnd_pic05
+                ,R.drawable.tnd_pic06
+                ,R.drawable.tnd_pic07
+                ,R.drawable.tnd_pic08
+                ,R.drawable.tnd_pic09
+
+        );
+
+        Movie movie18 = new Movie("Tomorrow Never Dies",tnd);
+        picturesList.add(movie18);
+
+        // Goldeneye
+        List<Integer> goldeneye= Arrays.asList(
+                R.drawable.goldeneye_pic01
+                ,R.drawable.goldeneye_pic02
+                ,R.drawable.goldeneye_pic03
+                ,R.drawable.goldeneye_pic04
+                ,R.drawable.goldeneye_pic05
+                ,R.drawable.goldeneye_pic06
+                ,R.drawable.goldeneye_pic07
+                ,R.drawable.goldeneye_pic08
+                ,R.drawable.goldeneye_pic09
+
+        );
+
+        Movie movie17 = new Movie("GoldenEye",goldeneye);
+        picturesList.add(movie17);
+
+        // Licence To Kill
+        List<Integer> ltk = Arrays.asList(
+                R.drawable.ltk_pic01
+                ,R.drawable.ltk_pic02
+                ,R.drawable.ltk_pic03
+                ,R.drawable.ltk_pic04
+                ,R.drawable.ltk_pic05
+                ,R.drawable.ltk_pic06
+                ,R.drawable.ltk_pic07
+                ,R.drawable.ltk_pic08
+                ,R.drawable.ltk_pic09
+
+        );
+
+        Movie movie16 = new Movie("Licence to Kill",ltk);
+        picturesList.add(movie16);
+
+        // The Living DayLights
+        List<Integer> daylights = Arrays.asList(
+                R.drawable.daylights_pic01
+                ,R.drawable.daylights_pic02
+                ,R.drawable.daylights_pic03
+                ,R.drawable.daylights_pic04
+                ,R.drawable.daylights_pic05
+                ,R.drawable.daylights_pic06
+                ,R.drawable.daylights_pic07
+                ,R.drawable.daylights_pic08
+                ,R.drawable.daylights_pic09
+
+        );
+
+        Movie movie15 = new Movie("The Living Daylights",daylights);
+        picturesList.add(movie15);
+
+        // A View To A Kill
+        List<Integer> vtk = Arrays.asList(
+                R.drawable.vtk_pic01
+                ,R.drawable.vtk_pic02
+                ,R.drawable.vtk_pic03
+                ,R.drawable.vtk_pic04
+                ,R.drawable.vtk_pic05
+                ,R.drawable.vtk_pic06
+                ,R.drawable.vtk_pic07
+                ,R.drawable.vtk_pic08
+                ,R.drawable.vtk_pic09
+
+        );
+
+        Movie movie14 = new Movie("A View to a Kill",vtk);
+        picturesList.add(movie14);
+
+        // Octopussy
+        List<Integer> octopussy = Arrays.asList(
+                R.drawable.octopussy_pic01
+                ,R.drawable.octopussy_pic02
+                ,R.drawable.octopussy_pic03
+                ,R.drawable.octopussy_pic04
+                ,R.drawable.octopussy_pic05
+                ,R.drawable.octopussy_pic06
+                ,R.drawable.octopussy_pic07
+                ,R.drawable.octopussy_pic08
+                ,R.drawable.octopussy_pic09
+
+        );
+
+        Movie movie13 = new Movie("Octopussy",octopussy);
+        picturesList.add(movie13);
+
+        // For Your Eyes Only
+        List<Integer> eyesonly = Arrays.asList(
+                R.drawable.eyesonly_pic01
+                ,R.drawable.eyesonly_pic02
+                ,R.drawable.eyesonly_pic03
+                ,R.drawable.eyesonly_pic04
+                ,R.drawable.eyesonly_pic05
+                ,R.drawable.eyesonly_pic06
+                ,R.drawable.eyesonly_pic07
+                ,R.drawable.eyesonly_pic08
+                ,R.drawable.eyesonly_pic09
+
+        );
+
+        Movie movie12 = new Movie("For Your Eyes Only",eyesonly);
+        picturesList.add(movie12);
+
+        // Moonraker
+        List<Integer> moonraker = Arrays.asList(
+                R.drawable.moonraker_pic01
+                ,R.drawable.moonraker_pic02
+                ,R.drawable.moonraker_pic03
+                ,R.drawable.moonraker_pic04
+                ,R.drawable.moonraker_pic05
+                ,R.drawable.moonraker_pic06
+                ,R.drawable.moonraker_pic07
+                ,R.drawable.moonraker_pic08
+                ,R.drawable.moonraker_pic09
+
+        );
+
+        Movie movie11 = new Movie("Moonraker",moonraker);
+        picturesList.add(movie11);
+
+        // The Spy Who Loved Me
+        List<Integer> spy = Arrays.asList(
+                R.drawable.spy_pic01
+                ,R.drawable.spy_pic02
+                ,R.drawable.spy_pic03
+                ,R.drawable.spy_pic04
+                ,R.drawable.spy_pic05
+                ,R.drawable.spy_pic06
+                ,R.drawable.spy_pic07
+                ,R.drawable.spy_pic08
+                ,R.drawable.spy_pic09
+
+        );
+
+        Movie movie10 = new Movie("The Spy Who Loved Me",spy);
+        picturesList.add(movie10);
+
+        // The Man With The Golden Gun
+        List<Integer> goldengun = Arrays.asList(
+                R.drawable.goldengun_pic01
+                ,R.drawable.goldengun_pic02
+                ,R.drawable.goldengun_pic03
+                ,R.drawable.goldengun_pic04
+                ,R.drawable.goldengun_pic05
+                ,R.drawable.goldengun_pic06
+                ,R.drawable.goldengun_pic07
+                ,R.drawable.goldengun_pic08
+                ,R.drawable.goldengun_pic09
+
+        );
+
+        Movie movie9 = new Movie("The Man with the Golden Gun",goldengun);
+        picturesList.add(movie9);
+
+        // Live And Let Die
+        List<Integer> lald = Arrays.asList(
+                R.drawable.lald_pic01
+                ,R.drawable.lald_pic02
+                ,R.drawable.lald_pic03
+                ,R.drawable.lald_pic04
+                ,R.drawable.lald_pic05
+                ,R.drawable.lald_pic06
+                ,R.drawable.lald_pic07
+                ,R.drawable.lald_pic08
+                ,R.drawable.lald_pic09
+
+        );
+
+        Movie movie8 = new Movie("Live and Let Die",lald);
+        picturesList.add(movie8);
+
+        // Diamonds Are Forever
+        List<Integer> diamonds = Arrays.asList(
+                R.drawable.diamonds_pic01
+                ,R.drawable.diamonds_pic02
+                ,R.drawable.diamonds_pic03
+                ,R.drawable.diamonds_pic04
+                ,R.drawable.diamonds_pic05
+                ,R.drawable.diamonds_pic06
+                ,R.drawable.diamonds_pic07
+                ,R.drawable.diamonds_pic08
+                ,R.drawable.diamonds_pic09
+
+        );
+
+        Movie movie7 = new Movie("Diamonds Are Forever",diamonds);
+        picturesList.add(movie7);
+
+        // On Her Majesty's Secret Service
+        List<Integer> majesty = Arrays.asList(
+                R.drawable.majesty_pic01
+                ,R.drawable.majesty_pic02
+                ,R.drawable.majesty_pic03
+                ,R.drawable.majesty_pic04
+                ,R.drawable.majesty_pic05
+                ,R.drawable.majesty_pic06
+                ,R.drawable.majesty_pic07
+                ,R.drawable.majesty_pic08
+                ,R.drawable.majesty_pic09
+
+        );
+
+        Movie movie6 = new Movie("On Her Majesty's Secret Service",majesty);
+        picturesList.add(movie6);
+
+        // You Only Live Twice
+        List<Integer> twice = Arrays.asList(
+                R.drawable.twice_pic01
+                ,R.drawable.twice_pic02
+                ,R.drawable.twice_pic03
+                ,R.drawable.twice_pic04
+                ,R.drawable.twice_pic05
+                ,R.drawable.twice_pic06
+                ,R.drawable.twice_pic07
+                ,R.drawable.twice_pic08
+                ,R.drawable.twice_pic09
+
+        );
+
+        Movie movie5 = new Movie("You Only Live Twice",twice);
+        picturesList.add(movie5);
+
+        // Thunderball
+        List<Integer> thunderball = Arrays.asList(
+                R.drawable.thunderball_pic01
+                ,R.drawable.thunderball_pic02
+                ,R.drawable.thunderball_pic03
+                ,R.drawable.thunderball_pic04
+                ,R.drawable.thunderball_pic05
+                ,R.drawable.thunderball_pic06
+                ,R.drawable.thunderball_pic07
+                ,R.drawable.thunderball_pic08
+                ,R.drawable.thunderball_pic09
+
+        );
+
+        Movie movie4 = new Movie("Thunderball",thunderball);
+        picturesList.add(movie4);
+
+        // Goldfinger
+        List<Integer> goldfinger = Arrays.asList(
+                R.drawable.goldfinger_pic01
+                ,R.drawable.goldfinger_pic02
+                ,R.drawable.goldfinger_pic03
+                ,R.drawable.goldfinger_pic04
+                ,R.drawable.goldfinger_pic05
+                ,R.drawable.goldfinger_pic06
+                ,R.drawable.goldfinger_pic07
+                ,R.drawable.goldfinger_pic08
+                ,R.drawable.goldfinger_pic09
+
+        );
+
+        Movie movie3 = new Movie("Goldfinger",goldfinger);
+        picturesList.add(movie3);
+
+        // From Russia With Love
+        List<Integer> russia = Arrays.asList(
+                R.drawable.russia_pic01
+                ,R.drawable.russia_pic02
+                ,R.drawable.russia_pic03
+                ,R.drawable.russia_pic04
+                ,R.drawable.russia_pic05
+                ,R.drawable.russia_pic06
+                ,R.drawable.russia_pic07
+                ,R.drawable.russia_pic08
+                ,R.drawable.russia_pic09
+
+        );
+
+        Movie movie2 = new Movie("From Russia with Love",russia);
+        picturesList.add(movie2);
+
+        // Dr. No
+        List<Integer> no = Arrays.asList(
+                R.drawable.no_pic01
+                ,R.drawable.no_pic02
+                ,R.drawable.no_pic03
+                ,R.drawable.no_pic04
+                ,R.drawable.no_pic05
+                ,R.drawable.no_pic06
+                ,R.drawable.no_pic07
+                ,R.drawable.no_pic08
+                ,R.drawable.no_pic09
+
+        );
+
+        Movie movie1 = new Movie("Dr. No",no);
+        picturesList.add(movie1);
+
+        return picturesList;
+    }
 }

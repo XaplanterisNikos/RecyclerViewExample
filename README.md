@@ -11,6 +11,8 @@ This Android project demonstrates the use of `RecyclerView` with two activities,
   - **DetailActivity**: Shows detailed information about a selected movie.
 - **Search Functionality**: Filter movies by their title.
 - Ascending - Descending Button
+- **RecyclerView Horizontal** to display images of the movie
+- clickable Images to display fullscreen
 - **Swipe-to-Delete**: Remove movies from the list with a swipe gesture.
 
 ## Screenshots
@@ -18,17 +20,17 @@ This Android project demonstrates the use of `RecyclerView` with two activities,
 <div style="display: flex; gap: 20px;">
 
   <div style="text-align: center;">
-    <img src="app/src/main/res/screenshots/main_Screenshot.png" alt="Main Activity" width="180"/>
+    <img src="app/src/main/res/drawable/main_screenshot.png" alt="Main Activity" width="180"/>
     <div style="font-size: 10px; color: #555;">Main Activity</div>
   </div>
 
   <div style="text-align: center;">
-    <img src="app/src/main/res/screenshots/main_b_Screenshot.png" alt="Main Activity (Alternative)" width="180"/>
+    <img src="app/src/main/res/drawable/main_b_screenshot.png" alt="Main Activity (Alternative)" width="180"/>
     <div style="font-size: 10px; color: #555;">Main Activity (cast selection)</div>
   </div>
 
   <div style="text-align: center;">
-    <img src="app/src/main/res/screenshots/details_Screenshot.png" alt="Detail Activity" width="180"/>
+    <img src="app/src/main/res/drawable/details_screenshot.png" alt="Detail Activity" width="180"/>
     <div style="font-size: 10px; color: #555;">Detail Activity</div>
   </div>
 
@@ -61,11 +63,14 @@ RecyclerViewExample/
 │   │   │   ├── java/com/example/recyclerviewexample/
 │   │   │   │   ├── adapter/
 │   │   │   │   │   └── MyAdapter.java
+│   │   │   │   │   └── PictureAdapter.java
 │   │   │   │   ├── model/
 │   │   │   │   │   └── Movie.java
 │   │   │   │   ├── activities/
 │   │   │   │   │   ├── MainActivity.java
 │   │   │   │   │   ├── DetailActivity.java
+│   │   │   │   │   ├── FullscreenPhotoActivity.java
+│   │   │   │   │   ├── SplashActivity.java
 │   │   │   │   └── data/
 │   │   │   │       └── MovieData.java
 │   │   │   ├── res/
@@ -73,6 +78,10 @@ RecyclerViewExample/
 │   │   │   │   │   ├── activity_main.xml
 │   │   │   │   │   ├── activity_detail.xml
 │   │   │   │   │   ├── movie_row.xml
+│   │   │   │   │   ├── item_picture.xml
+│   │   │   │   │   ├── activity_fullscreen_photo.xml
+│   │   │   │   │   ├── activity_splash.xml
+│   │   │   │   │   ├── photo_item.xml
 │   │   │   │   ├── drawable/
 │   │   │   │   │   └── png files
 │   │   │   │   ├── values/

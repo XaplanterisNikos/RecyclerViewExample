@@ -1,5 +1,6 @@
 package com.foxnks.recyclerviewexample1.activities;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -161,6 +162,32 @@ public class MainActivity extends AppCompatActivity {
         });
 
         return super.onCreateOptionsMenu(menu);
+    }
+
+    // Save the RecyclerView state in SharedPreferences
+    @Override
+    protected void onPause() {
+        super.onPause();
+        SharedPreferences preferences = getSharedPreferences("RecyclerViewPrefs", MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        int position = ((LinearLayoutManager) recyclerView.getLayoutManager()).findFirstVisibleItemPosition();
+        editor.putInt("scroll_position", position);
+        editor.apply();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        SharedPreferences preferences = getSharedPreferences("RecyclerViewPrefs", MODE_PRIVATE);
+        int position = preferences.getInt("scroll_position", 0);
+
+        recyclerView.scrollToPosition(position);
+
+        // Clear the saved position
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.remove("scroll_position");
+        editor.apply();
     }
 
 }
