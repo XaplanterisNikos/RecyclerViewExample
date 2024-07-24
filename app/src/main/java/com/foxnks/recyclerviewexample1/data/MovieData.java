@@ -634,6 +634,125 @@ return movieList;
         Movie movie16 = new Movie("Licence to Kill",ltk);
         picturesList.add(movie16);
 
+        // The Living DayLights
+        List<Integer> daylights = Arrays.asList(
+                R.drawable.daylights_pic01
+                ,R.drawable.daylights_pic02
+                ,R.drawable.daylights_pic03
+                ,R.drawable.daylights_pic04
+                ,R.drawable.daylights_pic05
+                ,R.drawable.daylights_pic06
+                ,R.drawable.daylights_pic07
+                ,R.drawable.daylights_pic08
+                ,R.drawable.daylights_pic09
+
+        );
+
+        Movie movie15 = new Movie("The Living Daylights",daylights);
+        picturesList.add(movie15);
+
+        // A View To A Kill
+        List<Integer> vtk = Arrays.asList(
+                R.drawable.vtk_pic01
+                ,R.drawable.vtk_pic02
+                ,R.drawable.vtk_pic03
+                ,R.drawable.vtk_pic04
+                ,R.drawable.vtk_pic05
+                ,R.drawable.vtk_pic06
+                ,R.drawable.vtk_pic07
+                ,R.drawable.vtk_pic08
+                ,R.drawable.vtk_pic09
+
+        );
+
+        Movie movie14 = new Movie("A View to a Kill",vtk);
+        picturesList.add(movie14);
+
+        // Octopussy
+        List<Integer> octopussy = Arrays.asList(
+                R.drawable.octopussy_pic01
+                ,R.drawable.octopussy_pic02
+                ,R.drawable.octopussy_pic03
+                ,R.drawable.octopussy_pic04
+                ,R.drawable.octopussy_pic05
+                ,R.drawable.octopussy_pic06
+                ,R.drawable.octopussy_pic07
+                ,R.drawable.octopussy_pic08
+                ,R.drawable.octopussy_pic09
+
+        );
+
+        Movie movie13 = new Movie("Octopussy",octopussy);
+        picturesList.add(movie13);
+
+        // For Your Eyes Only
+        List<Integer> eyesonly = Arrays.asList(
+                R.drawable.eyesonly_pic01
+                ,R.drawable.eyesonly_pic02
+                ,R.drawable.eyesonly_pic03
+                ,R.drawable.eyesonly_pic04
+                ,R.drawable.eyesonly_pic05
+                ,R.drawable.eyesonly_pic06
+                ,R.drawable.eyesonly_pic07
+                ,R.drawable.eyesonly_pic08
+                ,R.drawable.eyesonly_pic09
+
+        );
+
+        Movie movie12 = new Movie("For Your Eyes Only",eyesonly);
+        picturesList.add(movie12);
+
+        // Moonraker
+        List<Integer> moonraker = Arrays.asList(
+                R.drawable.moonraker_pic01
+                ,R.drawable.moonraker_pic02
+                ,R.drawable.moonraker_pic03
+                ,R.drawable.moonraker_pic04
+                ,R.drawable.moonraker_pic05
+                ,R.drawable.moonraker_pic06
+                ,R.drawable.moonraker_pic07
+                ,R.drawable.moonraker_pic08
+                ,R.drawable.moonraker_pic09
+
+        );
+
+        Movie movie11 = new Movie("Moonraker",moonraker);
+        picturesList.add(movie11);
+
+        // The Spy Who Loved Me
+        List<Integer> spy = Arrays.asList(
+                R.drawable.spy_pic01
+                ,R.drawable.spy_pic02
+                ,R.drawable.spy_pic03
+                ,R.drawable.spy_pic04
+                ,R.drawable.spy_pic05
+                ,R.drawable.spy_pic06
+                ,R.drawable.spy_pic07
+                ,R.drawable.spy_pic08
+                ,R.drawable.spy_pic09
+
+        );
+
+        Movie movie10 = new Movie("The Spy Who Loved Me",spy);
+        picturesList.add(movie10);
+
+        // The Man With The Golden Gun
+        List<Integer> goldengun = Arrays.asList(
+                R.drawable.goldengun_pic01
+                ,R.drawable.goldengun_pic02
+                ,R.drawable.goldengun_pic03
+                ,R.drawable.goldengun_pic04
+                ,R.drawable.goldengun_pic05
+                ,R.drawable.goldengun_pic06
+                ,R.drawable.goldengun_pic07
+                ,R.drawable.goldengun_pic08
+                ,R.drawable.goldengun_pic09
+
+        );
+
+        Movie movie9 = new Movie("The Man with the Golden Gun",goldengun);
+        picturesList.add(movie9);
+
         return picturesList;
     }
 }
