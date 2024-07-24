@@ -753,6 +753,142 @@ return movieList;
         Movie movie9 = new Movie("The Man with the Golden Gun",goldengun);
         picturesList.add(movie9);
 
+        // Live And Let Die
+        List<Integer> lald = Arrays.asList(
+                R.drawable.lald_pic01
+                ,R.drawable.lald_pic02
+                ,R.drawable.lald_pic03
+                ,R.drawable.lald_pic04
+                ,R.drawable.lald_pic05
+                ,R.drawable.lald_pic06
+                ,R.drawable.lald_pic07
+                ,R.drawable.lald_pic08
+                ,R.drawable.lald_pic09
+
+        );
+
+        Movie movie8 = new Movie("Live and Let Die",lald);
+        picturesList.add(movie8);
+
+        // Diamonds Are Forever
+        List<Integer> diamonds = Arrays.asList(
+                R.drawable.diamonds_pic01
+                ,R.drawable.diamonds_pic02
+                ,R.drawable.diamonds_pic03
+                ,R.drawable.diamonds_pic04
+                ,R.drawable.diamonds_pic05
+                ,R.drawable.diamonds_pic06
+                ,R.drawable.diamonds_pic07
+                ,R.drawable.diamonds_pic08
+                ,R.drawable.diamonds_pic09
+
+        );
+
+        Movie movie7 = new Movie("Diamonds Are Forever",diamonds);
+        picturesList.add(movie7);
+
+        // On Her Majesty's Secret Service
+        List<Integer> majesty = Arrays.asList(
+                R.drawable.majesty_pic01
+                ,R.drawable.majesty_pic02
+                ,R.drawable.majesty_pic03
+                ,R.drawable.majesty_pic04
+                ,R.drawable.majesty_pic05
+                ,R.drawable.majesty_pic06
+                ,R.drawable.majesty_pic07
+                ,R.drawable.majesty_pic08
+                ,R.drawable.majesty_pic09
+
+        );
+
+        Movie movie6 = new Movie("On Her Majesty's Secret Service",majesty);
+        picturesList.add(movie6);
+
+        // You Only Live Twice
+        List<Integer> twice = Arrays.asList(
+                R.drawable.twice_pic01
+                ,R.drawable.twice_pic02
+                ,R.drawable.twice_pic03
+                ,R.drawable.twice_pic04
+                ,R.drawable.twice_pic05
+                ,R.drawable.twice_pic06
+                ,R.drawable.twice_pic07
+                ,R.drawable.twice_pic08
+                ,R.drawable.twice_pic09
+
+        );
+
+        Movie movie5 = new Movie("You Only Live Twice",twice);
+        picturesList.add(movie5);
+
+        // Thunderball
+        List<Integer> thunderball = Arrays.asList(
+                R.drawable.thunderball_pic01
+                ,R.drawable.thunderball_pic02
+                ,R.drawable.thunderball_pic03
+                ,R.drawable.thunderball_pic04
+                ,R.drawable.thunderball_pic05
+                ,R.drawable.thunderball_pic06
+                ,R.drawable.thunderball_pic07
+                ,R.drawable.thunderball_pic08
+                ,R.drawable.thunderball_pic09
+
+        );
+
+        Movie movie4 = new Movie("Thunderball",thunderball);
+        picturesList.add(movie4);
+
+        // Goldfinger
+        List<Integer> goldfinger = Arrays.asList(
+                R.drawable.goldfinger_pic01
+                ,R.drawable.goldfinger_pic02
+                ,R.drawable.goldfinger_pic03
+                ,R.drawable.goldfinger_pic04
+                ,R.drawable.goldfinger_pic05
+                ,R.drawable.goldfinger_pic06
+                ,R.drawable.goldfinger_pic07
+                ,R.drawable.goldfinger_pic08
+                ,R.drawable.goldfinger_pic09
+
+        );
+
+        Movie movie3 = new Movie("Goldfinger",goldfinger);
+        picturesList.add(movie3);
+
+        // From Russia With Love
+        List<Integer> russia = Arrays.asList(
+                R.drawable.russia_pic01
+                ,R.drawable.russia_pic02
+                ,R.drawable.russia_pic03
+                ,R.drawable.russia_pic04
+                ,R.drawable.russia_pic05
+                ,R.drawable.russia_pic06
+                ,R.drawable.russia_pic07
+                ,R.drawable.russia_pic08
+                ,R.drawable.russia_pic09
+
+        );
+
+        Movie movie2 = new Movie("From Russia with Love",russia);
+        picturesList.add(movie2);
+
+        // Dr. No
+        List<Integer> no = Arrays.asList(
+                R.drawable.no_pic01
+                ,R.drawable.no_pic02
+                ,R.drawable.no_pic03
+                ,R.drawable.no_pic04
+                ,R.drawable.no_pic05
+                ,R.drawable.no_pic06
+                ,R.drawable.no_pic07
+                ,R.drawable.no_pic08
+                ,R.drawable.no_pic09
+
+        );
+
+        Movie movie1 = new Movie("Dr. No",no);
+        picturesList.add(movie1);
+
         return picturesList;
     }
 }
