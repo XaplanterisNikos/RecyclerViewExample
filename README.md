@@ -12,6 +12,7 @@ This Android project demonstrates the use of `RecyclerView` with two activities,
 - **Search Functionality**: Filter movies by their title.
 - Ascending - Descending Button
 - **RecyclerView Horizontal** to display images of the movie
+- clickable Images to display fullscreen
 - **Swipe-to-Delete**: Remove movies from the list with a swipe gesture.
 
 ## Screenshots
@@ -68,6 +69,8 @@ RecyclerViewExample/
 │   │   │   │   ├── activities/
 │   │   │   │   │   ├── MainActivity.java
 │   │   │   │   │   ├── DetailActivity.java
+│   │   │   │   │   ├── FullscreenPhotoActivity.java
+│   │   │   │   │   ├── SplashActivity.java
 │   │   │   │   └── data/
 │   │   │   │       └── MovieData.java
 │   │   │   ├── res/
@@ -76,6 +79,9 @@ RecyclerViewExample/
 │   │   │   │   │   ├── activity_detail.xml
 │   │   │   │   │   ├── movie_row.xml
 │   │   │   │   │   ├── item_picture.xml
+│   │   │   │   │   ├── activity_fullscreen_photo.xml
+│   │   │   │   │   ├── activity_splash.xml
+│   │   │   │   │   ├── photo_item.xml
 │   │   │   │   ├── drawable/
 │   │   │   │   │   └── png files
 │   │   │   │   ├── values/
