@@ -184,92 +184,39 @@ public class MovieData {
 
         Movie movie21 = new Movie("Casino Royale"
                 , R.drawable.casino_royale
-                ,"After becoming a 00 agent, James Bond hunts down a bomb maker in Madagascar, which leads him to shady financier Alex " +
-                    "Dimitrios in the Bahamas, and then to a plot to blow up the prototype Skyfleet airliner at Miami Airport. By preventing the " +
-                    "bombing, Bond leaves criminal banker Le Chiffre on the verge of bankruptcy – Le Chiffre lost his clients’ money by betting on " +
-                    "Skyfleet’s failure on the stock market. Le Chiffre sets up a high-stakes poker game in Montenegro to win back the lost money. " +
-                    "Bond attends with Treasury agent Vesper Lynd and wins, but Le Chiffre kidnaps Lynd and tortures Bond in an attempt to regain the " +
-                    "winnings. They are saved when Mr White, a senior figure in terrorist organisation QUANTUM, kills Le Chiffre. However, Lynd is " +
-                    "secretly working for White and has made a deal with him to save Bond’s life. In love with Lynd, Bond resigns from MI6 and travels " +
-                    "to Venice with her. There, he realises she has betrayed him and stolen the money. After a gunfight with QUANTUM’s men in a " +
-                    "collapsing Venetian villa, Lynd lets herself drown because she cannot bear the burden of her guilt. Bond pursues White and shoots " +
-                    "him in the leg, then introduces himself; “The name’s Bond, James Bond.”"
-                ,"14 November 2006, Odeon Leicester Square, London"
+                ,context.getString(R.string.casinoRoyale_description)
+                ,context.getString(R.string.casinoRoyale_worldPremiere)
                 ,2006
                 ,"Daniel Craig, Eva Green, Mads Mikkelsen, Judi Dench, Jeffrey Wright, Ginacarlo Giannini, Caterina Murino, Simon Abkarian, Isaach De Bankole, " +
                     "Jesper Christensen, Ivana Milicevic, Tobias Menzies, Claudio Santamaria, Sébastien Foucan, Malcolm Sinclair");
 
         Movie movie22 = new Movie("Quantum of Solace"
                 , R.drawable.qosolace
-                ,"Quantum Of Solace starts 10 minutes after the end of Casino Royale. Bond’s search for answers behind Vesper’s betrayal " +
-                    "leads him to uncover QUANTUM, a sinister organisation whose tentacles spread across the globe, with double agents buried within " +
-                    "the British government, MI6 and the CIA. Evidence takes him to Haiti, where he meets Camille. She is an agent who has her own" +
-                    " vengeance-fuelled agenda, to avenge her family’s deaths at the hands of former Bolivian dictator General Medrano. Posing as " +
-                    "the girlfriend of faux-environmentalist Dominic Greene, she becomes suspicious of his land acquisition and business relationship " +
-                    "with Medrano. With Bond by her side, they discover Greene is part of QUANTUM, an organisation that is secretly appropriating all " +
-                    "of Bolivia’s water supply and replacing its left-of-centre president with a more pliable leader."
-                ,"29 October 2008, Odeon " +
-                    "Leicester Square, London"
+                ,context.getString(R.string.quantumOfSolace_description)
+                ,context.getString(R.string.quantumOfSolace_worldPremiere)
                 ,2008
                 ,"Daniel Craig, Olga Kurylenko, Mathieu Amalric, Judi Dench, Giancarlo Giannini, Gemma Arterton, Jeffrey Wright, Jesper Christensen, Anatole Taubman," +
                     " Rory Kinnear, Tim Pigott-Smith, Joaquín Cosio");
         Movie movie23 = new Movie("Skyfall"
                 , R.drawable.skyfall
-                ,"James Bond chases assassin Patrice through the streets of Istanbul to recover a flash drive containing the " +
-                    "names of every MI6 and NATO agent embedded in terrorist organisations around the world. As Bond and Patrice fight on top " +
-                    "of a moving train, on M’s orders field agent Eve attempts to shoot Patrice, but she hits Bond. He falls 300 feet into the " +
-                    "water below and is presumed dead. MI6 is attacked, forcing M to relocate the agency underground. These events cause her " +
-                    "authority and position to be challenged by Mallory, the new chairman of the Intelligence and Security Committee. " +
-                    "Bond returns broken and full of doubts. He fails MI6’s physical and psychological tests, but M lies to him and tells him he " +
-                    "has passed, and she sends him on a mission to track down Patrice in Shanghai. Assuming Patrice’s identity, Bond follows clues " +
-                    "that lead him to Severine in Macau, and then to her master, Silva, on an abandoned island. Silva is a former MI6 agent seeking " +
-                    "revenge for M’s betrayal of him, but Bond captures him before he can carry out his plan. As M goes in front of a board of inquiry, " +
-                    "and Q tries to hack into Silva’s computer, Silva escapes and Bond goes in pursuit. Silva attacks the board of inquiry, but Bond " +
-                    "gets M out safely and drives her north to his ancestral home in Scotland, Skyfall. With the help of groundskeeper Kincade, " +
-                    "Bond and M defend Skyfall from Silva’s assault, and defeat him, but not before M receives a fatal wound. Later Bond reports to " +
-                    "Mallory – the new M – and is ready to take on his new mission."
-                ,"23 October 2012, The Royal Albert Hall, London"
+                ,context.getString(R.string.skyfall_description)
+                ,context.getString(R.string.skyfall_worldPremiere)
                 ,2012
                 ,"Daniel Craig, Javier Bardem, Judi Dench, Ralph Fiennes, Naomie Harris, Bérénice Marlohe, " +
                     "Albert Finney, Ben Whishaw, Rory Kinnear, Ola Rapace, Helen McCory");
 
         Movie movie24 = new Movie("Spectre"
                 , R.drawable.spectre
-                ,"On a rogue mission in Mexico City Bond kills an assassin. Back in London, Bond is grounded by M but confides " +
-                    "in Moneypenny that he was acting on orders from the previous M before she died. Bond travels to Rome and infiltrates a secret " +
-                    "meeting, but their leader Franz Oberhauser, reveals Bond’s presence. The terrifying Hinx pursues Bond in a car chase. " +
-                    "In Austria, Bond meets his old nemesis Mr White and makes a promise to keep Mr White’s daughter safe in exchange for leading " +
-                    "him to Oberhauser. The daughter, Dr Madeleine Swann, is reluctant to help, but after Bond rescues her from Hinx she agrees. " +
-                    "She reveals the secret organisation is SPECTRE. Swann leads Bond to Tangier and from there they journey by train to a desert " +
-                    "location, Swann makes Bond question the life he has chosen for himself. Hinx appears and a vicious fight ensues. " +
-                    "At a high-tech facility in the desert Bond and Swann meet Oberhauser, He amasses information to manipulate events and " +
-                    "is about to gain control of a global surveillance network. After Oberhauser tortures Bond and reveals himself to be " +
-                    "Ernst Stavro Blofeld, Bond and Swann escape and destroy the base. In London Bond debriefs M, is captured by " +
-                    "Blofeld, then rescues Swann. Bond has the opportunity to kill Blofeld but decides to let him live. Bond joins Swann, " +
-                    "leaving his old life behind."
-                ,"26 October 2015, The Royal Albert Hall, London"
+                ,context.getString(R.string.spectre_description)
+                ,context.getString(R.string.spectre_worldPremiere)
                 ,2015
                 ,"Daniel Craig, Christoph Waltz, Léa Seydoux, Ralph Fiennes, Monica Bellucci, Ben Whishaw, Naomie Harris," +
                     " Dave Bautista, Andrew Scott, Rory Kinnear, Jesper Christensen");
 
         Movie movie25 = new Movie("No Time to Die"
                 , R.drawable.no_time_to_die
-                ,"After a flashback to Madeleine’s childhood and an attack on her family home, in which the masked assassin " +
-                    "Safin spares her life, Bond and Madeleine are enjoying a new life in Italy. Bond visits Vesper Lynd’s family tomb to say " +
-                    "his final goodbye but is set upon by SPECTRE agents led by the henchman Primo. The pair escape in the Aston Martin DB5. " +
-                    "Bond believes that Madeleine has betrayed him and they part ways.\n" +
-                    "In London, SPECTRE attacks again, destroying a laboratory that is developing a devastating bioweapon called Heracles, " +
-                    "and kidnapping its chief scientist Valdo Obruchev. In the wake of the attack, Felix Leiter visits Bond in " +
-                    "Jamaica and asks for his help. Bond sails to Cuba where he and CIA agent Paloma witness Heracles kill a gathering of " +
-                    "SPECTRE agents. Bond beats the new double-0 agent to the capture of Obruchev and delivers him to Felix out at sea. " +
-                    "The rogue CIA agent Logan Ash betrays them, killing Felix. Bond returns to London, desperate to avenge his friend’s death. " +
-                    "Bond receives a frosty reception from M although is eventually allowed to visit the incarcerated Blofeld. " +
-                    "This precipitates a brief and painful reunion with Madeleine and elicits a number of startling revelations from " +
-                    "Blofeld before he succumbs to a nasty death. Armed with fresh information, Bond tracks Madeleine to Norway and the pair " +
-                    "reunite, learning about the villain Safin and enmity for SPECTRE from secret files collected by Madeleine’s father, " +
-                    "Mr White. Ash attacks them and Safin kidnaps Madeleine, taking her to his island base. M orders Bond and Nomi to attack " +
-                    "and they rescue Madeleine, killing Obruchev, Primo and Safin."
-                ,"28 September 2021, Royal Albert Hall, London"
+                ,context.getString(R.string.noTimeToDie_description)
+                ,context.getString(R.string.noTimeToDie_worldPremiere)
                 ,2021
                 ,"Daniel Craig, Rami Malek, Léa Seydoux, Lashana Lynch, Ben Whishaw, Naomie Harris, Ralph Fiennes, " +
                     "Jeffrey Wright, Rory Kinnear, Christoph Waltz, David Dencik, Ana de Armas, Billy Magnussen, Dali Benssalah");
