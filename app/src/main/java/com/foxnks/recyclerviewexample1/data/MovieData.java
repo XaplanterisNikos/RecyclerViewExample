@@ -30,18 +30,8 @@ public class MovieData {
 
         Movie movie2 = new Movie("From Russia with Love"
                 , R.drawable.russia_with_love
-                ,"James Bond is assigned by his superior M to help a young Russian girl Tatiana Romanova, who has declared her desire to defect " +
-                    "from her job as a clerk in the Russian embassy in Istanbul with an invaluable Lektor cipher machine. Believing herself a willing tool " +
-                    "of her government, Tatiana is actually the pawn of SPECTRE, a group of international criminals who plan to use the beautiful Russian " +
-                    "girl to lure Bond to his death and to confound both the British and Russian Secret Service agencies.\n" +
-                    "In the intriguing atmosphere of Istanbul, Bond is aided by Kerim Bey, the Turkish agent for the British Secret Service, " +
-                    "whom Bond comes to respect and admire. After eluding several death traps in Istanbul, Bond and Tatiana escape aboard the " +
-                    "Orient Express. SPECTRE has assigned their cold-blooded killer, Grant to kill and discredit the famed British agent, in hand-to-hand " +
-                    "combat Bond triumphs over Grant in the close quarters of his train compartment, but the attempts on his life are by no means over. " +
-                    "He later fights an unequal battle against a SPECTRE helicopter and makes a desperate dash across the Gulf of Venice in a speedboat " +
-                    "chased by a horde of enemy agents. In Venice, he faces the final attempt on his life when Rosa Klebb, the master planner of the " +
-                    "SPECTRE murder organisation, makes a personal bid to kill him."
-                ,"10 October 1963, Odeon Leicester Square, London"
+                ,context.getString(R.string.fromRussiaWithLove_description)
+                ,context.getString(R.string.fromRussiaWithLove_worldPremiere)
                 ,1963
                 ,"Sean Connery, Daniela Bianchi, Pedro Armendáriz, Lotte Lenya, Robert Shaw, Bernard Lee, Eunice Gayson, Walter Gotell," +
                     " Francis De Wolff, Lois Maxwell, Aliza Gur, Martine Beswicke, Vladek Shyebal, Anthony Dawson, Desmond Llewelyn, Leila");
