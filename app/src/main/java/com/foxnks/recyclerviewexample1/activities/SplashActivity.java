@@ -32,7 +32,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 // Start the main activity
-                Intent mainIntent = new Intent(SplashActivity.this, MainActivity.class);
+                Intent mainIntent = new Intent(SplashActivity.this, MenuActivity.class);
                 startActivity(mainIntent);
                 // Close the splash activity
                 finish();
