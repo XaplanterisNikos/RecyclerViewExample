@@ -1,5 +1,6 @@
 package com.foxnks.recyclerviewexample1.activities;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -35,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Movie> movieList;
     private MyAdapter myAdapter;
     private TextView titletv;
-    private Button btn_sort;
-    private MovieData movieData ;
+    private Button btn_sort, btn_menu;
+    private MovieData movieData;
     private String TAG = "Check Array";
     private int[] years;
     private boolean isSortedAscending = true;
@@ -54,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        movieData =  new MovieData(this);
+        movieData = new MovieData(this);
 
         // Set the ActionBar title to a translator strings
         if (getSupportActionBar() != null) {
@@ -72,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerview);
         titletv = findViewById(R.id.tvtitle);
         btn_sort = findViewById(R.id.btn_short);
+        btn_menu = findViewById(R.id.btn_menu);
 
         // set title
         titletv.setText("007 Movies");
@@ -126,14 +128,33 @@ public class MainActivity extends AppCompatActivity {
                 myAdapter.notifyDataSetChanged();
             }
         });
-    }
 
+
+        // button menu
+        btn_menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Δημιουργούμε ένα intent για να πάμε στο μενού (π.χ., MainActivity)
+                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+
+                // Καθαρίζουμε όλες τις προηγούμενες δραστηριότητες από το stack
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+
+                // Ξεκινάμε τη δραστηριότητα του μενού
+                startActivity(intent);
+
+                // Κλείνουμε την τρέχουσα δραστηριότητα για να εξασφαλίσουμε ότι δεν παραμένει
+                finish();
+            }
+        });
+
+    }
 
     // get cast array
     private void getCast() {
         cast = new String[movieList.size()];
-        for(int i =0;i< cast.length; i++){
-            cast[i]= movieList.get(i).getCast();
+        for (int i = 0; i < cast.length; i++) {
+            cast[i] = movieList.get(i).getCast();
         }
     }
     // method to return array of release years
@@ -145,7 +166,7 @@ public class MainActivity extends AppCompatActivity {
 //        return yearMovie;
 //    }
 
-// Search Menu
+    // Search Menu
     public boolean onCreateOptionsMenu(Menu menu) {
 
         getMenuInflater().inflate(R.menu.menu_item, menu);

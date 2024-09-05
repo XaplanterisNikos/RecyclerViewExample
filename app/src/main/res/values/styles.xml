@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="JamesBondButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/rounded_button</item> <!-- Σκούρο γκρι -->
+        <item name="android:textColor">#845BCE</item> <!-- Μώβ χρώμα -->
+       <!-- <item name="android:radius">20dp</item> // Στρογγυλεμένες γωνίες -->
+        <item name="android:padding">5dp</item> <!-- Εσωτερική απόσταση -->
+        <item name="android:textSize">16sp</item> <!-- Μέγεθος γραμματοσειράς -->
+       <!-- <item name="android:fontFamily">@font/custom_font</item>  //  Προαιρετικά, μια γραμματοσειρά που να θυμίζει James Bond -->
+    </style>
+</resources>

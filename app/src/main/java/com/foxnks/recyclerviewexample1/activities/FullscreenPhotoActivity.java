@@ -12,6 +12,8 @@ import androidx.core.view.WindowInsetsCompat;
 import com.foxnks.recyclerviewexample1.R;
 import com.squareup.picasso.Picasso;
 
+import io.getstream.photoview.PhotoView;
+
 public class FullscreenPhotoActivity extends AppCompatActivity {
 
     @Override
@@ -25,7 +27,7 @@ public class FullscreenPhotoActivity extends AppCompatActivity {
             return insets;
         });
 
-        ImageView imageView = findViewById(R.id.fullscreen_image);
+        PhotoView imageView = findViewById(R.id.fullscreen_image);
         int imageResId = getIntent().getIntExtra("image_res_id", -1);
 
         if (imageResId != -1) {

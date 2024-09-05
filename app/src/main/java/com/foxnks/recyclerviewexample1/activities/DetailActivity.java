@@ -32,6 +32,8 @@ public class DetailActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private MovieData movieData ;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,9 +70,18 @@ public class DetailActivity extends AppCompatActivity {
 
         // Back button
         btnBack.setOnClickListener(v -> {
-            Intent bckIntent = new Intent(this, MainActivity.class);;
+            Intent bckIntent = new Intent(this, MainActivity.class);
+
+            // Καθαρίζουμε όλες τις προηγούμενες δραστηριότητες από το stack
+            bckIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+
             startActivity(bckIntent);
+
+            // Κλείνουμε την τρέχουσα δραστηριότητα για να εξασφαλίσουμε ότι δεν παραμένει
+            finish();
         });
+
+
 
         tvDetailMovie.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,6 +89,26 @@ public class DetailActivity extends AppCompatActivity {
 
             }
         });
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        // Δημιουργούμε ένα intent για να πάμε στο μενού (π.χ., MainActivity)
+        Intent intent = new Intent(DetailActivity.this, MainActivity.class);
+
+        // Καθαρίζουμε όλες τις προηγούμενες δραστηριότητες από το stack
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+
+        // Ξεκινάμε τη δραστηριότητα του μενού
+        startActivity(intent);
+
+        // Κλείνουμε την τρέχουσα δραστηριότητα
+        finish();
+
+        // Καλούμε την υπερκλάση για την προεπιλεγμένη συμπεριφορά
+        // Αν δεν θέλεις να καλέσεις την super, μην το κάνεις
+        super.onBackPressed();
 
     }
 
@@ -109,4 +140,6 @@ public class DetailActivity extends AppCompatActivity {
         btnBack = findViewById(R.id.backButton);
         recyclerView = findViewById(R.id.recyclerViewPictures);
     }
+
+
 }
