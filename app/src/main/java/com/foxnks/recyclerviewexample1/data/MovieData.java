@@ -86,97 +86,48 @@ public class MovieData {
 
         Movie movie9 = new Movie("The Man with the Golden Gun"
                 , R.drawable.man_golden_gun
-                ,"James Bond receives a gold bullet inscribed with “007”, signifying he has been targeted by high-class professional " +
-                    "assassin Francisco Scaramanga known as “The Man with the Golden Gun”. 007 is relieved of his current assignment, the " +
-                    "search for scientist Gibson and his solex agitator, the solution to the global energy crisis, and determines to find " +
-                    "Scaramanga. The trail leads to a specialist armorer Lazar in Macau, then to Scaramanga’s contact Andrea and industrialist " +
-                    "Hai Fat in Hong Kong. After killing Gibson, Scaramanga steals the solex agitator and kidnaps MI6 liaison office Mary Goodnight. " +
-                    "A homing device leads Bond to Scaramanga’s lair, an isolated island in Chinese waters. Bond travels there by seaplane, " +
-                    "kills Scaramanga in a duel, retrieves the solex agitator, and escapes with Goodnight in Scaramanga’s junk."
-                ,"19 December 1974, " +
-                    "Odeon Leicester Square, London"
+                ,context.getString(R.string.manGoldenGun_description)
+                ,context.getString(R.string.manGoldenGun_worldPremiere)
                 ,1974
                 ,"Roger Moore, Christopher Lee, Britt Ekland, Maud Adams, Hervé Villechaize, Clifton James, Richard Loo, Soon-Taik Oh, Marc Lawrence, Bernard Lee, Lois Maxwell, " +
                     "Marne Maitland, Desmond Llewelyn, James Cossins, Chan Yiu Lam, Carmen Sautoy, Gerald James, Michael Osborne, Michael Fleming");
 
         Movie movie10 = new Movie("The Spy Who Loved Me"
                 , R.drawable.spy_who_loves_me
-                ,"After British and Russian submarines carrying nuclear warheads vanish, James Bond travels to Egypt, where illicit microfilm " +
-                    "plans for a submarine tracking system are being offered for sale. In Cairo he meets KGB agent Major Anya Amasova, who is on the " +
-                    "same mission. After their contact is murdered, they fight Jaws, a steel-toothed villain in the pay of industrialist Karl Stromberg. " +
-                    "MI6 and the KGB order Bond and Amasova to work together. In Sardinia, they encounter Stromberg and suspect that he is behind the " +
-                    "submarine disappearances. After being chased by Jaws and Stromberg’s henchmen, they escape underwater in Bond’s amphibious Lotus " +
-                    "Esprit. Onboard a US submarine, the spies learn more about Stromberg’s underwater base, Atlantis, and about the supertanker " +
-                    "The Liparus. When their sub is captured by The Liparus, a huge vessel, that “swallows” submarines, Bond discovers " +
-                    "Stromberg’s plan to trigger a nuclear war. Bond leads the captured sailors against The Liparus’ crew and defeats Stromberg. " +
-                    "Atlantis sinks but Jaws escapes. "
-                ,"7 July 1977, Odeon Leicester Square, London"
+                ,context.getString(R.string.spyLovedMe_description)
+                , context.getString(R.string.spyLovedMe_worldPremiere)
                 ,1977
                 ,"Roger Moore, Barbara Bach, Curt Jurgens, Richard Kiel, Caroline Munro, Walter Gotell, Geoffrey Keen, George Baker, Michael Billington, Olga Bisera, " +
                     "Edward De Souza, Bernard Lee, Desmond Llewelyn, Lois Maxwell");
 
         Movie movie11 = new Movie("Moonraker"
                 , R.drawable.moonraker
-                ,"When the Moonraker space shuttle is hijacked, M sends Bond to the shuttle’s manufacturer, Hugo Drax, to investigate. " +
-                    "Bond follows clues that lead him first to Venice, where he discovers Drax’s laboratory manufacturing a highly toxic nerve gas, " +
-                    "and then to Rio, where he teams up with CIA agent and astrophysicist Holly Goodhead. At every turn they are attacked by Jaws on " +
-                    "Drax’s orders. Bond goes into the jungle to find the source of the nerve gas, but instead discovers that Drax is launching " +
-                    "multiple space shuttles filled with couples who will find safe haven in his secret space station. Drax plans to send pods " +
-                    "containing deadly nerve gas to Earth to destroy the human race, and will later repopulate it with his master race of perfect " +
-                    "physical specimens. A platoon of US marines arrive in a shuttle and defeat Drax’s men in a laser battle, while Bond and Dr. " +
-                    "Goodhead track and destroy the deadly gas. "
-                ,"26 June 1979, Odeon Leicester Square, London"
+                ,context.getString(R.string.moonraker_description)
+                ,context.getString(R.string.moonraker_worldPremiere)
                 ,1979
                 ,"Roger Moore, Lois Chiles, Michael Lonsdale, Richard Kiel, Corinne Cléry, Bernard Lee, Desmond Llewelyn, Lois Maxwell, Toshirô Suga, " +
                     "Geoffrey Keen, Emily Bolton, Michael Marshall, Walter Gotell, Blanche Ravalec");
 
         Movie movie12 = new Movie("For Your Eyes Only"
                 , R.drawable.for_your_eyes
-                ,"James Bond is ordered to retrieve the Automatic Targeting Attack Communicator (ATAC), housed on a sunken spy ship, the St. Georges." +
-                    " When Sir Timothy Havelock, a marine archaeologist secretly helping the British to locate the ship, is murdered along with his wife," +
-                    " Bond is dispatched to Spain to find out who hired the hitman, Gonzales, but before he can find out, Gonzales is killed by Havelock’s" +
-                    " daughter, Melina. In Italy, Bond and Melina seek organised-crime figure Milos Columbo through businessman Aristotle Kristatos, " +
-                    "then travel to Corfu to pursue Columbo. Columbo reveals that Kristatos is responsible for the Havelock’s murder and is working " +
-                    "with the Russians to obtain the ATAC. After retrieving the ATAC from the wreck of the St. Georges, Bond and Melina are captured " +
-                    "by Kristatos, but survive his attempt to drown them. Aided by Columbo, Bond and Melina infiltrate the mountaintop monastery " +
-                    "of St. Cyril’s, where Bond retrieves the ATAC and prevents Melina from killing Kristatos, who dies by Columbo’s hand. " +
-                    "As the Russians arrive to collect the ATAC, Bond destroys it so neither East nor West can have " +
-                    "it. "
-                ,"24 June 1981, Odeon Leicester Square, London"
+                ,context.getString(R.string.fyeyesOnly_description)
+                ,context.getString(R.string.fyeyesOnly_worldPremiere)
                 ,1981
                 ,"Roger Moore, Carole Bouquet, Julian Glover, Topol, Lynn-Holly Johnson, Cassandra Harris, Michael Gothard, Lois Maxwell, Desmond Llewelyn, " +
                     "Geoffrey Keen, James Villiers, Walter Gotell");
 
         Movie movie13 = new Movie("Octopussy"
                 , R.drawable.octapussy
-                ,"009 is found dead at the British Ambassador’s residence in East Berlin, dressed as a circus clown and carrying a fake " +
-                    "Fabergé egg. MI6 sends Bond to investigate when the real egg appears at a London auction. Bond swaps the real egg with the " +
-                    "fake, and drives up the bidding against exiled Afghan prince Kamal Khan, who ultimately wins the auction. Bond follows Khan" +
-                    " back to his palace in Rajasthan, India, where he discovers that Khan is working with Orlov, a renegade Soviet general, " +
-                    "and is using Octopussy’s circus troupe to smuggle Soviet treasures into the West. Bond infiltrates the circus, and finds " +
-                    "that Orlov has replaced the treasures with a nuclear warhead, primed to explode during the show at a US Air Force base in" +
-                    " West Germany. He convinces Octopussy that Khan has betrayed her and she assists Bond in deactivating the warhead. " +
-                    "Bond and Octopussy return to India and launch an assault on Khan’s palace. Khan and bodyguard Gobinda capture " +
-                    "Octopussy as they escape in a plane. Bond clings to the fuselage in a fight to the death with Gobinda, and manages " +
-                    "to rescue Ocotpussy moments before the plane crashes, killing Khan."
-                ,"6 June 1983, Odeon Leicester Square, London"
+                ,context.getString(R.string.octopussy_description)
+                ,context.getString(R.string.octopussy_worldPremiere)
                 ,1983
                 ,"Roger Moore, Maud Adams, Louis Jourdan, Kabir Bedi, Steven Berkoff, Kristina Wayborn, Vijay Armitraj, Robert Brown, Walter Gotell, " +
                     "Geoffrey Keen, Desmond Llewelyn, Lois Maxwell, Andy Bradford");
 
         Movie movie14 = new Movie("A View to a Kill"
                 , R.drawable.view_to_a_kill
-                ,"A microchip James Bond recovers from the body of 003 in Siberia is a copy of one that is impervious to the magnetic pulse " +
-                    "of a nuclear blast. It is made by a company recently acquired by Anglo-French combine Zorin Industries, so Bond is assigned " +
-                    "to investigate Max Zorin. In Paris, Bond meets detective Aubergine to find out about Zorin, but Aubergine is killed by Zorin’s " +
-                    "bodyguard May Day. Bond poses as a horse trainer to infiltrate Zorin’s equestrian estate, but his cover is blown and Zorin " +
-                    "tries to drown him. 007 survives and tracks Zorin to San Francisco, where Zorin is planning Project Main Strike: the destruction " +
-                    "of Silicon Valley by detonating explosions in mines beneath lakes and flooding the Hayward and San Andreas faults. With help " +
-                    "from geologist Stacey Sutton, Bond sabotages Zorin’s scheme. Finding an unexpected ally in May Day, whom Zorin has betrayed, " +
-                    "Bond prevents the main explosion from detonating. As Zorin escapes in his airship, he kidnaps Stacey. The final confrontation " +
-                    "between Bond and Zorin is atop the Golden Gate Bridge in San Francisco, where Zorin falls to his death."
-                ,"22 May 1985, Palace " +
-                    "of Fine Arts, San Francisco, USA"
+                ,context.getString(R.string.viewToKill_description)
+                ,context.getString(R.string.viewToKill_worldPremiere)
                 ,1985
                 ,"Roger Moore, Christopher Walken, Tanya Roberts, Grace Jones, Patrick Macnee, Patrick Bauchau, David Yip, Fiona Fullerton, Manning Redwood, Alison Doody, Willoughby Gray, Desmond Llewelyn, Robert Brown, Lois Maxwell, " +
                     "Walter Gotell, Geoffrey Keen, Jean Rougerie, Daniel Benzali, Bogdan Kominowski, Papillon Soo, Mary Stavin, " +
@@ -184,77 +135,40 @@ public class MovieData {
 
         Movie movie15 = new Movie("The Living Daylights"
                 , R.drawable.daylights
-                ,"After a training exercise in Gibraltar is hijacked and an MI6 agent is murdered, it seems that the KGB’s old policy of " +
-                    "Smert Spionam (Death to Spies) has been reactivated. Bond is sent to Czechoslovakia to support the defection of a Russian Army " +
-                    "Officer, Koskov. He becomes suspicious when the sniper he has to assassinate appears to be a glamorous cellist, Kara Milovy. " +
-                    "Later, when Koskov is kidnapped from the MI6 safe house, Bond’s suspicions are heightened and he combines his official " +
-                    "assignment to assassinate General Leonid Pushkin – the new head of the KGB, whom Koskov has named as the initiator of the " +
-                    "Smert Spionam policy – with an investigation into Kara and Koskov. Bond, with Kara in tow, pursues Koskov to Tangier, where " +
-                    "he is hiding with arms/drug dealer Whitaker and his hired killer, Necros. Betrayed by Kara, Bond is kidnapped and taken to " +
-                    "Afghanistan. He escapes and, with the assistance of an army of Afghan rebels led by charismatic Kamran Shah, brings down " +
-                    "Whitaker’s illegal activities."
-                ,"29 June 1987, Odeon Leicester Square, London"
+                ,context.getString(R.string.livingDayLights_description)
+                ,context.getString(R.string.livingDayLights_worldPremiere)
                 ,1987
                 ,"Timothy Dalton, Maryam d’Abo, Jeroen Krabbé, Joe Don Baker, John Rhys-Davies, Art Malik, Andreas Wisniewski, Thomas Wheatley, " +
                     "Desmond Llewelyn, Robert Brown, Caroline Bliss, John Terry");
 
         Movie movie16 = new Movie("Licence to Kill"
                 , R.drawable.licence_to_kill
-                ,"En route to the wedding of his friend Felix Leiter in Florida, Bond and Leiter take a detour to arrest drug baron Franz Sanchez. " +
-                    "It doesn’t take too long, however, for Sanchez to break himself out of jail, and kill the new Mrs Leiter and maim Felix. " +
-                    "Bond seeks revenge. With his licence revoked by the British government, and with the aid of CIA operative Pam Bouvier as well " +
-                    "as MI6 gadget specialist Q, they bring Sanchez and his entire corrupt drug empire to its knees."
-                ,"13 June 1989, Odeon Leicester " +
-                    "Square, London"
+                ,context.getString(R.string.licenceKill_description)
+                ,context.getString(R.string.licenceKill_worldPremiere)
                 ,1989
                 ,"Timothy Dalton, Carey Lowell, Robert Davi, Talisa Soto, Anthony Zerbe, Frank McRae, Wayne Newton, Benicio Del Toro, Desmond Llewelyn, David Hedison, " +
                     "Robert Brown");
 
         Movie movie17 = new Movie("GoldenEye"
                 , R.drawable.goldeneye
-                ,"It’s 1986, James Bond and agent 006, Alec Trevelyan, infiltrate a Russian weapons factory, but Trevelyan is killed by General " +
-                    "Ourumov while Bond escapes. Nine years later General Ourumov and Russian mafia assassin Xenia Onatopp attack the Severnaya " +
-                    "satellite control centre and gain control of the GoldenEye weapons system in outer space. Only computer programmer Natalya " +
-                    "Simonova escapes Severnaya alive. In St Petersburg, Bond discovers that Trevelyan had faked his own death, and is planning " +
-                    "to use the GoldenEye system to punish Britain for betraying his Cossack parents, who later committed suicide. After a dramatic " +
-                    "tank chase on the streets of St Petersberg, Bond and Natalya join forces to track Trevelyan to Cuba, and infiltrate his facility. " +
-                    "Natalya reprograms GoldenEye, and Bond fights Trevelyan to the death on the installation’s giant radio dish."
-                ,"13 November 1995, " +
-                    "Radio City Music Hall, New York City, NY, USA"
+                , context.getString(R.string.goldenEye_description)
+                ,context.getString(R.string.goldenEye_worldPremiere)
                 ,1995
                 ,"Pierce Brosnan, Sean Bean, Izabella Scorupco, Famke Janssen, Joe Don Baker, Robbie Coltrane, Alan Cumming, Gottfried John, Tcheky Karyo, Michael Kitchen," +
                     " Serena Gordon, Judi Dench, Desmond Llewelyn, Samantha Bond");
 
         Movie movie18 = new Movie("Tomorrow Never Dies"
                 , R.drawable.tomorrow_never_dies
-                ,"While James Bond spies on a terrorist arms bazaar, he identifies “techno terrorist” Henry Gupta, who is buying a stolen " +
-                    "American GPS encoder. As Bond hijacks a Russian plane carrying nuclear torpedoes, Gupta escapes with the encoder during the " +
-                    "confusion. Gupta is working for media baron Elliot Carver, who plans to provoke war between China and the United Kingdom, " +
-                    "Gupta uses the encoder to send the British frigate HMS Devonshire off-course into Chinese waters, where Carver’s stealth ship, " +
-                    "commanded by Stamper, sinks the frigate with a sea drill and steals one of its missiles. Bond has 48 hours to investigate the " +
-                    "sinking before the British and Chinese go to war. Bond investigates Carver in Hamburg, seduces Carver’s wife, Paris, and steals " +
-                    "the GPS encoder. Carver orders assassin, Dr Kaufman to kill Paris and Bond. Paris dies, but Bond kills Kaufman and escapes. " +
-                    "Bond travels to the South China Sea and discovers that one of the missiles is missing from the wreck of the HMS Devonshire. " +
-                    "Wai Lin, a Chinese agent on the same case, and Bond are captured by Stamper and taken to Carver’s headquarters " +
-                    "in Ho Chi Minh City, but they escape and team up. They board Carver’s stealth ship to prevent him firing the stolen " +
-                    "British missile at Beijing. In the final confrontation, Bond detonates an explosive exposing the ship on radar to the " +
-                    "Royal Navy, and kills Carver with the sea drill."
-                ,"9 December 1997, Odeon Leicester Square, London"
+                ,context.getString(R.string.tneverDies_description)
+                ,context.getString(R.string.tneverDies_worldPremiere)
                 ,1997
                 ,"Pierce Brosnan, Jonathan Pryce, Michelle Yeoh, Teri Hatcher, Joe Don Baker, Götz Otto, Ricky Jay, Judi Dench, Desmond Llewelyn, Samantha Bond," +
                     " Geoffrey Palmer, Colin Salmon, Vincent Schiavelli, Cecilie Thomsen");
 
         Movie movie19 = new Movie("The World Is Not Enough"
                 , R.drawable.word_not_enough
-                ,"Following the murder of her father, oil magnate Sir Robert King, Elektra is assigned a bodyguard – MI6’s top agent James Bond." +
-                    " Sir Robert, an old friend of M’s, has been assassinated by terrorist Renard, who also seems to be targeting the 800-mile King " +
-                    "pipeline, under construction from Azerbaijan to bring oil to the West. Freelance terrorist Renard has a bullet lodged in his skull" +
-                    " following a run-in with 009; slowly dying, he feels no pain. Bond and Elektra become emotionally involved, but it transpires that" +
-                    " Elektra, previously the victim of a kidnapping plot by Renard, seduced him and has engineered the takeover of her father’s business " +
-                    "empire. Elektra kidnaps M and plans to detonate a nuclear explosion in Istanbul, contaminating the Bosphorus and ensuring the King " +
-                    "pipeline is the sole oil route west. Bond, aided by atomic physicist Dr Christmas Jones, kills Elektra and Renard, rescues M, " +
-                    "and prevents the cataclysm."
-                ,"8 November 1999, Bruin & Fox Theatre, Los Angeles, USA"
+                ,context.getString(R.string.worldNotEnough_description)
+                ,context.getString(R.string.worldNotEnough_worldPremiere)
                 ,1999
                 ,"Pierce Brosnan, Sophie Marceau, Robert Carlyle, Denise Richards, Robbie Coltrane, Judi Dench, Desmond Llewelyn, John Cleese, Maria Grazia Cucinotta, Samantha Bond, Michael Kitchen, Colin Salmon, Goldie, David Calder, " +
                     "Serena Scott Thomas, Ulrich Thomsen, John Seru, Claude-Oliver Rudolph, Patrick Malahide, " +
@@ -262,16 +176,8 @@ public class MovieData {
 
         Movie movie20 = new Movie("Die Another Day"
                 , R.drawable.die_another_day
-                ,"In North Korea, Bond kills Colonel Moon, who is trading weapons for African blood diamonds, and disfigures Moon’s henchman" +
-                    " Zao in the process. Bond is captured and spends 14 months in prison before being exchanged for Zao, who had been captured by the" +
-                    "British. MI6 believe Bond has cracked under torture, so he is disavowed. Bond tracks Zao to a Havana clinic, where he meets NSA agent" +
-                    " Jinx Johnson, and finds out Zao is receiving DNA therapy to alter his appearance. After Zao escapes from the clinic, Bond follows " +
-                    "the diamonds to London and then to billionaire Gustav Graves. M also suspects Graves – she planted agent Miranda Frost as Graves’ " +
-                    "assistant – and gives Bond back his 00 status. In Iceland Graves unveils Icarus, a powerful laser satellite. Working together, " +
-                    "Bond and Jinx discover that Graves is actually Moon; the colonel didn’t die in Korea and altered his appearance with gene therapy." +
-                    " Moon plans to use Icarus to help North Korea invade the South, but Bond and Jinx stow away on his cargo plane, where Jinx kills " +
-                    "Frost, who had switched her allegiances to Moon, and Bond kills Moon, so preventing the invasion."
-                ,"18 November 2002, The Royal Albert Hall, London"
+                ,context.getString(R.string.dieAnotherDay_description)
+                ,context.getString(R.string.dieAnotherDay_worldPremiere)
                 ,2002
                 ,"Pierce Brosnan, Halle Berry, Toby Stephens, Rosamund Pike, Rick Yune, Michael Madsen, Will Yun Lee, Kenneth Tsang, Judi Dench, John Cleese, " +
                     "Samantha Bond, Emilio Echevarría, Michael Gorevoy, Lawrence Makoare, Colin Salmon");
