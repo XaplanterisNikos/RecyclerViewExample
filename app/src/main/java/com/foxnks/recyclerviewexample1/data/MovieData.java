@@ -38,94 +38,48 @@ public class MovieData {
 
         Movie movie3 = new Movie("Goldfinger"
                 , R.drawable.goldfinger
-                ,"James Bond is assigned to investigate one of the wealthiest men in the world, Auric Goldfinger, who is suspected " +
-                    "of smuggling England’s gold reserves. Goldfinger’s greed is exceeded only by his disrespect for human life. Bond, aided " +
-                    "by Goldfinger’s secretary Jill Masterson, catches Goldfinger cheating at cards. In retaliation, Goldfinger has Jill Masterson " +
-                    "killed by smothering her with gold paint. The dead girl’s sister Tilly is also killed, when she follows Goldfinger to " +
-                    "Switzerland and attempts revenge. Bond is captured by Goldfinger’s huge manservant Oddjob, and almost killed by a deadly " +
-                    "laser beam. Drugged, 007 finds himself on Goldfinger’s private jet being flown to America where Goldfinger plans to " +
-                    "contaminate the Fort Knox gold increasing the value of his own gold. Bond, Pussy Galore and her flying circus thwart " +
-                    "Goldfinger’s plot."
-                ,"17 September 1964, Odeon Leicester Square, London"
+                , context.getString(R.string.goldfinger_description)
+                , context.getString(R.string.goldfinger_worldPremiere)
                 ,1964
                 ,"Sean Connery, Honor Blackman, Gert Fröbe, Shirley Eaton, Tania Mallet, Harold Sakata, Bernard Lee, " +
                     "Martin Benson, Cec Linder, Lois Maxwell, Desmond Llewelyn");
 
         Movie movie4 = new Movie("Thunderball"
                 , R.drawable.thunderball
-                ,"SPECTRE steals a Vulcan bomber carrying two nuclear warheads and holds NATO to ransom to the sum of £100 million. " +
-                    "In a race against time, Bond discovers the only lead – a photo of NATO pilot Major Derval with his sister, Domino – and is " +
-                    "assigned to Nassau to investigate. Once he contacts Domino, and sees her connection to Emilio Largo, Bond and his team hunt " +
-                    "for the bombs on board Largo’s yacht, the Disco Volante, and at his villa, Palmyra, but without success. After dispatching " +
-                    "SPECTRE agent Fiona Volpe, Bond enlists the help of Domino by showing her proof that Largo killed her brother. As the Disco " +
-                    "Volante sails for Miami with the bombs aboard, Domino is discovered spying and is tortured by Largo. Bond takes part in the " +
-                    "thrilling underwater fight between SPECTRE and US aqua-paratroopers, before tackling Largo on board the Disco Volante. " +
-                    "As Largo is about to shoot Bond, Domino harpoons him, gaining revenge for the murder of her brother."
-                ,"9 December 1965, " +
-                    "Hibiya Cinema, Tokyo, Japan"
+                , context.getString(R.string.thunderball_description)
+                , context.getString(R.string.thunderball_worldPremiere)
                 ,1965
                 ,"Sean Connery, Claudine Auger, Adolfo Celi, Luciana Paluzzi, Rik Van Nutter, Guy Doleman, Molly Peters, " +
                     "Martine Beswick, Bernard Lee, Desmond Llewelyn, Lois Maxwell");
 
         Movie movie5 = new Movie("You Only Live Twice"
                 , R.drawable.only_live_twice
-                ,"James Bond is assassinated by Chinese agents in Hong Kong, but it is a ruse so that Bond can travel incognito " +
-                    "to Japan and investigate the hijacking of American and Russian spacecraft. Together with Tiger Tanaka and Aki of the " +
-                    "Japanese Secret Service, Bond traces a supply of liquid oxygen, which is used to fuel rockets, to a southern Japanese island. " +
-                    "So that Bond can live on the island without arousing suspicion, he becomes Japanese in appearance, trains with Tanaka’s ninjas," +
-                    " and marries Kissy Suzuki. Bond and Kissy look into the mysterious death of a fishing girl, and discover that SPECTRE, commanded" +
-                    " by Ernst Stavro Blofeld, have a secret rocket complex hidden inside a volcano. Bond, Tanaka, Kissy and the ninjas attack " +
-                    "the base, and stop Blofeld from detonating a nuclear war between Russia and America, but Blofeld escapes, leaving the base " +
-                    "to self-destruct."
-                ,"12 June 1967, Odeon Leicester Square, London"
+                ,context.getString(R.string.yonlyLiveTwice_description)
+                , context.getString(R.string.yonlyLiveTwice_worldPremiere)
                 ,1967
                 ,"Sean Connery, Akiko Wakabayashi, Mie Hama, Tetsuro Tamba, Teru Shimada, Karin Dor, Donald Pleasence, " +
                     "Bernard Lee, Desmond Llewelyn, Lois Maxwell, Charles Gray");
 
         Movie movie6 = new Movie("On Her Majesty's Secret Service"
                 , R.drawable.secret_service
-                ,"While James Bond is hunting Ernst Stavro Blofeld, head of SPECTRE, at a beach he saves Tracy from committing " +
-                    "suicide by drowning. Afterwards Bond and Tracy begin a relationship that gives her a reason to live. With the help of " +
-                    "Tracy’s father, Draco, head of the Unione Corse crime syndicate, Bond tracks down Blofeld to Piz Gloria, on a mountaintop " +
-                    "in the Alps. Here he finds that Blofeld is brainwashing a group of women to act as his secret agents of biological warfare so " +
-                    "that he can blackmail world powers. Bond infiltrates Piz Gloria disguised as Sir Hilary Bray of the College of Arms. When " +
-                    "his real identity is discovered, Bond escapes and reunites with Tracy, but she is captured by Blofeld after being caught in an " +
-                    "avalanche. The world powers refuse to attack Blofeld, so Draco leads the Unione Corse’s attack on Piz Gloria and rescues Tracy. " +
-                    "During the siege, Bond fights Blofeld on a bob-sleigh run and believes Blofeld to be dead. Afterwards, Tracy and Bond marry, " +
-                    "but Blofeld exacts his revenge when Tracy is killed in a hail of bullets intended for Bond."
-                ,"18 December 1969, Odeon Leicester " +
-                    "Square, London"
+                ,context.getString(R.string.onMajestrySS_description)
+                ,context.getString(R.string.onMajestrySS_worldPremiere)
                 ,1969
                 ,"George Lazenby, Diana Rigg, Telly Savalas, Gabriele Ferzetti, Ilse Steppat, Angela Scoular, Lois Maxwell, Catherina Von Schell, George Baker, " +
                     "Bernard Lee, Bernard Horsfall, Desmond Llewelyn, Yuri Borienko");
 
         Movie movie7 = new Movie("Diamonds Are Forever"
                 , R.drawable.diamonds_are_forever
-                ,"MI6 assign Bond to investigate who is hoarding the world’s supply of diamonds. The case leads Bond to Amsterdam," +
-                    " where he poses as criminal Peter Franks and meets Tiffany Case, a glamorous gemstone smuggler. Bond and Tiffany smuggle " +
-                    "the diamonds to Las Vegas, where Bond suspects that reclusive industrialist Willard Whyte is behind the conspiracy. " +
-                    "Bond infiltrates Whyte’s desert laboratory and finds that the diamonds are being used as part of a laser beam satellite. " +
-                    "Back in Vegas, Bond sneaks into Whyte’s penthouse, where he comes face-to-face with his arch-nemesis Blofeld, who has " +
-                    "kidnapped Whyte and is impersonating him. Blofeld plans to hold the world hostage for ransom with the deadly satellite. " +
-                    "After being left for dead by assassins Mr Kidd and Mr Wint, Bond and Tiffany follow Blofeld to his oil-rig base. " +
-                    "As CIA helicopter gunships attack, Bond disarms the satellite and prevents Blofeld’s escape. On the sea voyage back to " +
-                    "London, Bond disposes of Kidd and Wint as they try to assassinate him."
-                ,"30 December 1971, Odeon Leicester Square, London"
+                ,context.getString(R.string.diamondsForever_description)
+                ,context.getString(R.string.diamondsForever_worldPremiere)
                 ,1971
                 ,"Sean Connery, Jill St. John, Charles Gray, Lana Wood, Jimmy Dean, Bruce Cabot, Putter Smith, " +
                     "Bruce Glover, Norman Burton, Bernard Lee, Desmond Llewelyn, Lois Maxwell");
 
         Movie movie8 = new Movie("Live and Let Die"
                 , R.drawable.live_and_letdie
-                ,"While investigating the deaths of three British agents, James Bond falls foul of gangster Mr. Big, who seems to have " +
-                    "connections to Dr. Kananga, the president of San Monique. Bond follows leads to New Orleans, then to San Monique, where he is " +
-                    "aided by double agent Rosie Carver. After freeing Kananga’s girlfriend, Solitaire, a seer who foretells the future with Tarot " +
-                    "cards, Bond discovers that Kananga and Mr. Big are one and the same. Via his chain of Fillet of Soul restaurants, Kananga plans " +
-                    "to flood the USA with two tons of free heroin, which will put his competitors out of business and allow him to monopolise the " +
-                    "drug’s supply. When Solitaire is recaptured by Kananga, Bond, with help from CIA agent Felix Leiter and Quarrel Jr, returns to " +
-                    "San Monique to kill Kananga and save Solitaire, before she is ritually sacrificed by Baron Samedi, the voodoo chief."
-                ,"6 July 1973, " +
-                    "Odeon Leicester Square, London"
+                ,context.getString(R.string.liveAndletDie_description)
+                ,context.getString(R.string.liveAndletDie_worldPremiere)
                 ,1973
                 ,"Roger Moore, Yaphet Kotto, Jane Seymour, Clifton James, Julius W. Harris, Geoffrey Holder, David Hedison, Gloria Hendry, Bernard Lee, " +
                     "Lois Maxwell, Tommy Lane, Earl Jolly Brown, Roy Stewart, Lon Statton");
