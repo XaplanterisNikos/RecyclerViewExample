@@ -30,7 +30,7 @@ public class DetailActivity extends AppCompatActivity {
     private Button btnBack;
     private String title,release,description;
     private RecyclerView recyclerView;
-    private MovieData movieData = new MovieData();
+    private MovieData movieData ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +43,7 @@ public class DetailActivity extends AppCompatActivity {
             return insets;
         });
 
+        movieData = new MovieData(this);
         // Initialize widgets
         initializeWidget();
 

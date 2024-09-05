@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private MyAdapter myAdapter;
     private TextView titletv;
     private Button btn_sort;
-    private MovieData movieData = new MovieData();
+    private MovieData movieData ;
     private String TAG = "Check Array";
     private int[] years;
     private boolean isSortedAscending = true;
@@ -53,6 +53,13 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        movieData =  new MovieData(this);
+
+        // Set the ActionBar title to a translator strings
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle(R.string.title_app_menu);
+        }
 
         // create a list of movies
         movieList = new ArrayList<>();

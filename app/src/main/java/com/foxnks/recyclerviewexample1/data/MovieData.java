@@ -1,5 +1,7 @@
 package com.foxnks.recyclerviewexample1.data;
 
+import android.content.Context;
+
 import com.foxnks.recyclerviewexample1.R;
 import com.foxnks.recyclerviewexample1.model.Movie;
 
@@ -9,22 +11,19 @@ import java.util.List;
 
 public class MovieData {
 
+    private Context context;
+
+    public MovieData(Context context) {
+        this.context = context;
+    }
 
 
     public ArrayList<Movie> insertData() {
         ArrayList<Movie> movieList = new ArrayList<>();
         Movie movie1 = new Movie("Dr. No"
                 , R.drawable.no
-                ,"Arriving in Jamaica to investigate the suspected murder of a fellow agent and his secretary, " +
-                    "James Bond eludes several attempts on his life. With the help of CIA agent Felix Leiter and local " +
-                    "fisherman Quarrel, Bond follows the sinister trail of Dr. No to his island Crab Key. Shortly after landing " +
-                    "on the beach with Quarrel, Bond encounters alluring shell collector Honey Ryder. The three uninvited visitors " +
-                    "are hunted down by Dr. No’s private army, who kill Quarrel and take Bond and Honey to Dr. No’s magnificent lair. " +
-                    "Their megalomaniac host, Dr. No tells Bond that by utilising the nuclear laboratory on site, he plans to destroy the " +
-                    "US Space program as his first move towards world domination. Bond outwits Dr. No who falls victim to his own scheme and " +
-                    "dies. Rescuing Honey Ryder, Bond commandeers a motorboat and together they escape from Crab Key, seconds before it explodes, " +
-                    "leaving the final devastation of Dr. No’s laboratory behind."
-                ,"5 October 1962, London Pavilion Cinema, London"
+                ,context.getString(R.string.drNo_description)
+                ,context.getString(R.string.drNo_worldPremiere)
                 ,1962
                 ,"Sean Connery, Ursula Andress, Joseph Wiseman, Bernard Lee, Jack Lord, Anthony Dawson, Lois Maxwell, John Kitzmiller, Zena Marshall, Eunice Gayson, " +
                     "Peter Burton, Yvonne Shima, Michel Mok, Marguerite LeWars");
