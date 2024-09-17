@@ -2,9 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+<!--    <color name="colorPrimary">#3F51B5</color>-->
+<!--    <color name="colorPrimaryDark">#303F9F</color>-->
+<!--    <color name="colorAccent">#FF4081</color>-->
     <color name="splash_background">#1E1E1E</color> <!-- Dark gray background for splash screen -->
     <color name="splash_icon_background">#2D2D2D</color> <!-- Slightly lighter gray for icon background -->
     <color name="primary_dark">#121212</color> <!-- Primary dark color -->
@@ -14,4 +14,8 @@
     <color name="purple_accent">#845BCE</color> <!-- Purple accent color -->
     <color name="button_background_dark">#424242</color> <!-- Dark gray button background -->
     <color name="button_text_color">#FFFFFF</color> <!-- White text for buttons -->
+    <color name="window_background">#FAFAFA</color>
+    <color name="colorPrimary">#44465c</color> <!-- Darker blue -->
+    <color name="colorPrimaryDark">#3e4052</color> <!-- Even darker shade for status bar -->
+    <color name="colorAccent">#FF4081</color> <!-- Optional: Accent color -->
 </resources>

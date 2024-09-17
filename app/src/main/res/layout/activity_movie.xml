@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/window_background"
     tools:context=".activities.MovieActivity">
 
 
@@ -14,9 +15,9 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-<!--        <include-->
-<!--            android:id="@id/toolbar"-->
-<!--            layout="@layout/toolbar_main" />-->
+        <include
+            android:id="@id/toolbar"
+            layout="@layout/toolbar_main" />
 
         <LinearLayout
             android:layout_width="match_parent"

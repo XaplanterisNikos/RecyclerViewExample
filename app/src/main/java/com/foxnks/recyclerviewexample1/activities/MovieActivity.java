@@ -12,8 +12,13 @@ import android.widget.SearchView;
 import android.widget.TextView;
 
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -22,12 +27,15 @@ import com.foxnks.recyclerviewexample1.R;
 import com.foxnks.recyclerviewexample1.adapter.MyAdapter;
 import com.foxnks.recyclerviewexample1.data.MovieData;
 import com.foxnks.recyclerviewexample1.model.Movie;
+import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class MovieActivity extends AppCompatActivity {
+public class MovieActivity extends AppCompatActivity implements NavigationView
+
+        .OnNavigationItemSelectedListener{
 
     // widgets
     private RecyclerView recyclerView;
@@ -40,6 +48,9 @@ public class MovieActivity extends AppCompatActivity {
     private int[] years;
     private boolean isSortedAscending = true;
     private String[] cast;
+
+    public static final int NAV_FEEDBACK_ID = R.id.nav_feedback;
+    public static final int NAV_HELP_ID = R.id.nav_help;
 
 
     @Override
@@ -54,7 +65,16 @@ public class MovieActivity extends AppCompatActivity {
 //            return insets;
 //        });
 
+        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.main);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawer,toolbar,R.string.nav_open_drawer,R.string.nav_close_drawer);
+        drawer.addDrawerListener((toggle));
+        toggle.syncState();
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
 
         movieData = new MovieData(this);
 
@@ -219,4 +239,31 @@ public class MovieActivity extends AppCompatActivity {
         editor.apply();
     }
 
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        Intent intent = null;
+
+        if(id == NAV_FEEDBACK_ID){
+            intent = new Intent(this, FeedBackActivity.class);
+        }
+        if(id == NAV_HELP_ID){
+            intent = new Intent(this, HelpActivity.class);
+        }
+        if(intent != null){
+            startActivity(intent);
+        }
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.main);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
+    }
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.main);
+        if(drawer.isDrawerOpen(GravityCompat.START)){
+            drawer.closeDrawer(GravityCompat.START);
+        }else{
+            super.onBackPressed();
+        }
+    }
 }

@@ -10,12 +10,22 @@
     </style>
 
     <!-- Splash Screen Style for Android 12+ -->
-    <style name="Theme.MyApp.Splash" parent="Theme.SplashScreen">
+<!--    <style name="Theme.MyApp.Splash" parent="Theme.SplashScreen">-->
         <!-- Customize the system splash screen -->
-        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splashscreen</item> <!-- Your splash screen icon -->
-        <item name="android:windowSplashScreenBackground">@color/splash_background</item> <!-- Background color -->
-        <item name="android:windowSplashScreenIconBackgroundColor">@color/splash_icon_background</item> <!-- Icon background -->
+<!--        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splashscreen</item> &lt;!&ndash; Your splash screen icon &ndash;&gt;-->
+<!--        <item name="android:windowSplashScreenBackground">@color/splash_background</item> &lt;!&ndash; Background color &ndash;&gt;-->
+<!--        <item name="android:windowSplashScreenIconBackgroundColor">@color/splash_icon_background</item> &lt;!&ndash; Icon background &ndash;&gt;-->
+<!--    </style>-->
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- Customize text color -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!-- Customize icon color -->
+        <item name="colorControlNormal">@android:color/white</item>
     </style>
 
-
+    <style name="ToolbarPopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <!-- Customize popup menu text color -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
 </resources>
