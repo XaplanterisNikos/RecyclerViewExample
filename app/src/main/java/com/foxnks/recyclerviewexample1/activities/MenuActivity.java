@@ -2,7 +2,6 @@ package com.foxnks.recyclerviewexample1.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -10,6 +9,7 @@ import android.widget.Button;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
+import androidx.core.splashscreen.SplashScreen;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
@@ -19,6 +19,9 @@ public class MenuActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // Install the system splash screen
+//        SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
+
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_menu);
@@ -27,6 +30,11 @@ public class MenuActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        // Keep the splash screen visible longer if needed
+//        splashScreen.setKeepOnScreenCondition(() -> {
+//            // Add any conditions here if you need to keep the splash screen
+//            return false; // Return 'true' to keep the splash screen, 'false' to dismiss it
+//        });
 
 
         // Find buttons
@@ -45,12 +53,9 @@ public class MenuActivity extends AppCompatActivity {
         button3.startAnimation(slideInRight);
         button4.startAnimation(slideInRight);
 
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent openMovies = new Intent(MenuActivity.this, MainActivity.class);
-                startActivity(openMovies);
-            }
+        button2.setOnClickListener(v -> {
+            Intent openMovies = new Intent(MenuActivity.this, MovieActivity.class);
+            startActivity(openMovies);
         });
 
 

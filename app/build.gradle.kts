@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId = "com.foxnks.recyclerviewexample1"
-        minSdk = 24
+        minSdk = 31
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -39,6 +39,7 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.picasso)
     implementation(libs.photoview)
+    implementation("androidx.core:core-splashscreen:1.0.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

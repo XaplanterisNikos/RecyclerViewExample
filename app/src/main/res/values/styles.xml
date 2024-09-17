@@ -8,4 +8,14 @@
         <item name="android:textSize">16sp</item> <!-- Μέγεθος γραμματοσειράς -->
        <!-- <item name="android:fontFamily">@font/custom_font</item>  //  Προαιρετικά, μια γραμματοσειρά που να θυμίζει James Bond -->
     </style>
+
+    <!-- Splash Screen Style for Android 12+ -->
+    <style name="Theme.MyApp.Splash" parent="Theme.SplashScreen">
+        <!-- Customize the system splash screen -->
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splashscreen</item> <!-- Your splash screen icon -->
+        <item name="android:windowSplashScreenBackground">@color/splash_background</item> <!-- Background color -->
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/splash_icon_background</item> <!-- Icon background -->
+    </style>
+
+
 </resources>

@@ -28,15 +28,12 @@ public class SplashActivity extends AppCompatActivity {
         });
 
         // Using a handler to delay the transition to the main activity
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                // Start the main activity
-                Intent mainIntent = new Intent(SplashActivity.this, MenuActivity.class);
-                startActivity(mainIntent);
-                // Close the splash activity
-                finish();
-            }
+        new Handler().postDelayed(() -> {
+            // Start the main activity
+            Intent mainIntent = new Intent(SplashActivity.this, MenuActivity.class);
+            startActivity(mainIntent);
+            // Close the splash activity
+            finish();
         }, SPLASH_DISPLAY_LENGTH);
     }
 }

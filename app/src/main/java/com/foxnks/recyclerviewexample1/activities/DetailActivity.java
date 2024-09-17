@@ -20,8 +20,6 @@ import com.foxnks.recyclerviewexample1.data.MovieData;
 import com.foxnks.recyclerviewexample1.model.Movie;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Objects;
 
 public class DetailActivity extends AppCompatActivity {
@@ -70,7 +68,7 @@ public class DetailActivity extends AppCompatActivity {
 
         // Back button
         btnBack.setOnClickListener(v -> {
-            Intent bckIntent = new Intent(this, MainActivity.class);
+            Intent bckIntent = new Intent(this, MovieActivity.class);
 
             // Καθαρίζουμε όλες τις προηγούμενες δραστηριότητες από το stack
             bckIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -95,7 +93,7 @@ public class DetailActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         // Δημιουργούμε ένα intent για να πάμε στο μενού (π.χ., MainActivity)
-        Intent intent = new Intent(DetailActivity.this, MainActivity.class);
+        Intent intent = new Intent(DetailActivity.this, MovieActivity.class);
 
         // Καθαρίζουμε όλες τις προηγούμενες δραστηριότητες από το stack
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);

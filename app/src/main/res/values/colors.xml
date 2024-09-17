@@ -2,4 +2,16 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="splash_background">#1E1E1E</color> <!-- Dark gray background for splash screen -->
+    <color name="splash_icon_background">#2D2D2D</color> <!-- Slightly lighter gray for icon background -->
+    <color name="primary_dark">#121212</color> <!-- Primary dark color -->
+    <color name="accent_dark">#3F51B5</color> <!-- Dark blue accent color -->
+    <color name="text_light">#E0E0E0</color> <!-- Light gray text color -->
+    <color name="secondary_text_dark">#B0B0B0</color> <!-- Medium-light gray for secondary text -->
+    <color name="purple_accent">#845BCE</color> <!-- Purple accent color -->
+    <color name="button_background_dark">#424242</color> <!-- Dark gray button background -->
+    <color name="button_text_color">#FFFFFF</color> <!-- White text for buttons -->
 </resources>

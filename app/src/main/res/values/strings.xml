@@ -1,10 +1,13 @@
 <resources>
     <string name="app_name" translatable="false">JB Movie Library</string>
-    <string name="title_app_menu" translatable="true" >JB Movie Library</string>
+    <string name="user_name" translatable="false">foxnks@gmail.com</string>
+    <string name="title_app_menu" translatable="true">JB Movie Library</string>
     <string name="menuBooks">Books</string>
     <string name="menuMovies">Movies</string>
     <string name="menuVideoGames">Video Games</string>
     <string name="menuAccessories">Accessories</string>
+    <string name="nav_help">Help</string>
+    <string name="nav_feedback">Giv us feedback</string>
     <!-- DR NO -->
     <string name="drNo_description">Arriving in Jamaica to investigate the suspected murder of a fellow agent and his secretary,James Bond eludes several attempts on his life. With the help of CIA agent Felix Leiter and local fisherman Quarrel, Bond follows the sinister trail of Dr. No to his island Crab Key. Shortly after landing on the beach with Quarrel, Bond encounters alluring shell collector Honey Ryder. The three uninvited visitors are hunted down by Dr. No’s private army, who kill Quarrel and take Bond and Honey to Dr. No’s magnificent lair. Their megalomaniac host, Dr. No tells Bond that by utilising the nuclear laboratory on site, he plans to destroy the US Space program as his first move towards world domination. Bond outwits Dr. No who falls victim to his own scheme and dies. Rescuing Honey Ryder, Bond commandeers a motorboat and together they escape from Crab Key, seconds before it explodes, leaving the final devastation of Dr. No’s laboratory behind.</string>
     <string name="drNo_worldPremiere">5 October 1962, London Pavilion Cinema, London</string>
